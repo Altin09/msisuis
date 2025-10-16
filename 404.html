@@ -3,18 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Join MSIS – Membership Information</title>
-    <meta
-      name="description"
-      content="Become a member of MSIS – Muslim Students’ Society in Stavanger. Learn how to get involved and volunteer."
-    />
-    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Page Not Found – MSIS Stavanger</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-container">
         <a class="brand" href="index.html">
-          <img src="../../msis-logo-transp-512.png" alt="MSIS Stavanger logo" />
+          <img src="assets/msis-logo-transp-512.png" alt="MSIS Stavanger logo" />
           <span>MSIS Stavanger</span>
         </a>
         <button
@@ -32,46 +29,24 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="events.html">Events</a>
-            <a href="join.html" aria-current="page">Membership</a>
+            <a href="join.html">Membership</a>
             <a href="contact.html">Contact</a>
           </div>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section class="page-hero">
-        <div class="container hero-grid hero-grid--join">
-          <div class="hero-copy">
-            <span class="hero-badge">Join MSIS</span>
-            <h1 class="hero-title">Every Muslim student at UiS has a place here</h1>
-            <p class="hero-text">
-              Membership is free and open to current Muslim students at the University of Stavanger.
-              Join to receive event updates, vote at the General Assembly, and shape the future of
-              MSIS.
-            </p>
-          </div>
-          <div class="form-embed">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSe3IT1Eoqs2lS9M7CqTamBjqkouhe1iHlJ-0AoSt8DK9ymJVw/viewform?embedded=true"
-              title="MSIS Membership registration form"
-              loading="lazy"
-            >
-            </iframe>
-          </div>
-          <div class="highlight-card">
-            <span>Membership benefits</span>
-            <h3>Your voice matters</h3>
-            <p>
-              Members co-create the annual programme, access leadership development opportunities,
-              and receive support tailored to their student journey.
-            </p>
-            <ul class="details-list">
-              <li><strong>Cost</strong> None - MSIS membership is completely free.</li>
-              <li><strong>Eligibility</strong> Muslim students enrolled at UiS.</li>
-              <li><strong>Involvement</strong> Vote at the General Assembly and join working groups.</li>
-            </ul>
-          </div>
+    <main class="error-page">
+      <section class="error-card" aria-labelledby="error-title">
+        <p class="error-code">404</p>
+        <h1 id="error-title">Oops! This page got lost in the student maze.</h1>
+        <p class="error-text">
+          The link you followed might be out of date or the page could have moved. Let’s guide you
+          back to the community.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="index.html">Head to the homepage</a>
+          <a class="btn btn-outline" href="contact.html">Get in touch</a>
         </div>
       </section>
     </main>
@@ -79,7 +54,7 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <img src="../../msis-logo-transp-512.png" alt="MSIS Stavanger logo" />
+          <img src="assets/msis-logo-transp-512.png" alt="MSIS Stavanger logo" />
           <p class="tagline">
             MSIS fosters unity, learning, and dialogue among Muslim students at the University of
             Stavanger.
@@ -99,6 +74,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="events.html">Events</a>
+            <a href="join.html">Join</a>
             <a href="contact.html">Contact</a>
           </div>
         </div>
@@ -108,7 +84,7 @@
       </div>
     </footer>
 
-    <script src="../scripts/main.js" defer></script>
+    <script src="js/main.js" defer></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
