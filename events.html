@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Events & Activities – MSIS Stavanger</title>
+    <meta
+      name="description"
+      content="Explore the events, gatherings, and learning activities hosted by MSIS at the University of Stavanger."
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html">
+          <img src="msis-logo-transp-512.png" alt="MSIS Stavanger logo" />
+          <span>MSIS Stavanger</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          data-nav-toggle
+        >
+          ☰
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav>
+          <div class="nav-links" id="primary-navigation" data-nav-links>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html" aria-current="page">Events</a>
+            <a href="join.html">Membership</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="upcoming-events">
+        <div class="container section-header">
+          <h2>Upcoming MSIS dates</h2>
+          <p>
+            Keep track of planned gatherings and activities. The list updates automatically whenever
+            new events are added to the MSIS calendar.
+          </p>
+        </div>
+        <div class="container calendar-embed" role="region" aria-label="Upcoming MSIS events">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=1549fbba192f2a240cd9861c9b8665a918b52c91685de545c67603770dca1873%40group.calendar.google.com&amp;ctz=Europe%2FOslo&amp;mode=AGENDA&amp;showTabs=0&amp;showDate=0&amp;showPrint=0"
+            title="MSIS event calendar"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="page-hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="hero-badge">Events & activities</span>
+            <h1 class="hero-title">Growing together through meaningful experiences</h1>
+            <p class="hero-text">
+              From weekly gatherings to large-scale community events, MSIS designs programmes that
+              nurture faith, build friendships, and encourage collaboration with the wider UiS
+              community.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="join.html">Volunteer with MSIS</a>
+              <a class="btn btn-outline" href="#event-cards">Browse sample events</a>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <span>Planning ahead</span>
+            <h3>Bring MSIS to your campus project</h3>
+            <p>
+              We welcome invitations from faculties, student organizations, and UiS departments to
+              co-host workshops, cultural nights, and panel discussions that amplify Muslim voices.
+            </p>
+            <ul class="details-list">
+              <li><strong>Lead time</strong> Get in touch 4–6 weeks before your event</li>
+              <li><strong>Formats</strong> Dialogue panels, study skills sessions, volunteer drives</li>
+              <li><strong>Support</strong> Promotion through MSIS channels and volunteer teams</li>
+            </ul>
+            <a class="btn btn-outline" href="contact.html">Contact our activity planners</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="event-cards">
+        <div class="container section-header">
+          <h2>Signature MSIS programmes</h2>
+          <p>
+            These example events can be adapted for future semesters. Use them as inspiration when
+            planning the calendar or pitching collaborations.
+          </p>
+        </div>
+        <div class="container cards-grid">
+          <article class="card event-card">
+            <span class="pill">Dialogue</span>
+            <h3>Dialogsmøte – Bridges of Understanding</h3>
+            <div class="event-meta">
+              <span>March</span>
+              <span>UiS Library Auditorium</span>
+            </div>
+            <p>
+              An interfaith evening featuring representatives from MSIS, UiS Chaplaincy, and local
+              student groups. Includes keynote reflections, open Q&A, and guided conversation tables.
+            </p>
+            <p>
+              <strong>Why it matters:</strong> Builds trust across communities and showcases how faith
+              enriches academic life.
+            </p>
+          </article>
+          <article class="card event-card">
+            <span class="pill">Community</span>
+            <h3>International Dinner & Culture Night</h3>
+            <div class="event-meta">
+              <span>April</span>
+              <span>SiS Student Centre</span>
+            </div>
+            <p>
+              Students share family recipes, cultural performances, and stories behind their dishes.
+              The night ends with a collective reflection on hospitality, gratitude, and community
+              care.
+            </p>
+            <p>
+              <strong>Logistics tip:</strong> Partner with StOr for kitchen access and apply for SiS
+              funding for ingredients.
+            </p>
+          </article>
+          <article class="card event-card">
+            <span class="pill">Spirituality</span>
+            <h3>Friday Prayer & Gathering</h3>
+            <div class="event-meta">
+              <span>Weekly</span>
+              <span>Prayer Room Ø-110</span>
+            </div>
+            <p>
+              A welcoming khutbah followed by prayer, reflection, and informal catch-ups. Volunteers
+              assist new students with practical guidance and language support.
+            </p>
+            <p>
+              <strong>Accessibility:</strong> Provide clear signage to the space and offer quiet time
+              for those who wish to reflect after prayer.
+            </p>
+          </article>
+          <article class="card event-card">
+            <span class="pill">Education</span>
+            <h3>Study Skills & Wellbeing Workshop</h3>
+            <div class="event-meta">
+              <span>Semester start</span>
+              <span>Arne Rettedahls Hus</span>
+            </div>
+            <p>
+              A practical session co-run with SiS advisors highlighting time management, exam
+              preparation, and maintaining spiritual balance during busy study periods.
+            </p>
+            <p>
+              <strong>Outcome:</strong> Attendees receive templates and accountability buddies for the
+              semester.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container section-header">
+          <h2>Build the future calendar</h2>
+          <p>
+            Use this planner template to map upcoming programmes and ensure a balance of social,
+            educational, and reflective activities across the year.
+          </p>
+        </div>
+        <div class="container cards-grid">
+          <article class="card">
+            <h3>Semester Framework</h3>
+            <ul class="highlight-list">
+              <li>
+                <strong>Kick-off</strong>
+                Welcome brunch, meet the board, and overview of MSIS services.
+              </li>
+              <li>
+                <strong>Monthly focus</strong>
+                Alternate between community, learning, and service projects.
+              </li>
+              <li>
+                <strong>Exam season</strong>
+                Quiet study zones, late-night tea, and wellbeing check-ins.
+              </li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Volunteer Roles</h3>
+            <p>
+              Rotate responsibilities such as logistics lead, hospitality lead, and communications
+              lead to build leadership experience within the membership base.
+            </p>
+            <p>
+              Provide short debriefs after each event to capture lessons learned for future teams.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Bring your calendar online</h3>
+            <p>
+              Keep the MSIS Google Calendar updated so the list of upcoming dates at the top of this
+              page always reflects the latest plans. Update the colour coding inside Google Calendar
+              to match the MSIS palette.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="msis-logo-transp-512.png" alt="MSIS Stavanger logo" />
+          <p class="tagline">
+            MSIS fosters unity, learning, and dialogue among Muslim students at the University of
+            Stavanger.
+          </p>
+        </div>
+        <div>
+          <h3>Connect with us</h3>
+          <div class="footer-links">
+            <a href="mailto:msis.uis@gmail.com">msis.uis@gmail.com</a>
+            <a href="https://instagram.com/msisuis" rel="noopener">Instagram @msisuis</a>
+            <a href="https://www.facebook.com/muslim.stavanger/" rel="noopener">Facebook MSIS UiS</a>
+          </div>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="join.html">Join</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        © <span id="year">2025</span> MSIS – Muslim Students’ Society in Stavanger. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
