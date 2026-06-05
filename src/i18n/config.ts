@@ -26,6 +26,21 @@ export const localeNames: Record<Locale, string> = {
   zgh: 'ⵜⴰⵎⴰⵣⵉⵖⵜ',
 };
 
+// Flag emoji for each locale (representative country/region).
+export const localeFlags: Record<Locale, string> = {
+  no: '🇳🇴',
+  en: '🇬🇧',
+  sq: '🇦🇱',
+  ar: '🇸🇦',
+  fa: '🇮🇷',
+  tr: '🇹🇷',
+  id: '🇮🇩',
+  ur: '🇵🇰',
+  ce: '🇷🇺',
+  so: '🇸🇴',
+  zgh: '🇲🇦',
+};
+
 export function isRTL(lang: string): boolean {
   return rtlLocales.includes(lang as Locale);
 }
