@@ -25,7 +25,15 @@
           aria-controls="primary-navigation"
           data-nav-toggle
         >
-          ☰
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+            <path
+              d="M4 7h16M4 12h16M4 17h16"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
           <span class="sr-only">Menu</span>
         </button>
         <nav>
@@ -35,6 +43,7 @@
             <a href="events.html" aria-current="page">Events</a>
             <a href="join.html">Membership</a>
             <a href="contact.html">Contact</a>
+            <a class="btn btn-primary nav-cta" href="prayer.html">Prayer times</a>
           </div>
         </nav>
       </div>
@@ -48,12 +57,17 @@
             Keep track of planned gatherings and activities. The list updates automatically whenever
             new events are added to the MSIS calendar.
           </p>
+          <p> The calendar is not accessible in Incognito mode or Private Browsing. </p>
         </div>
         <div class="container calendar-embed" role="region" aria-label="Upcoming MSIS events">
           <iframe
-            src="https://calendar.google.com/calendar/embed?src=1549fbba192f2a240cd9861c9b8665a918b52c91685de545c67603770dca1873%40group.calendar.google.com&amp;ctz=Europe%2FOslo&amp;mode=AGENDA&amp;showTabs=0&amp;showDate=0&amp;showPrint=0"
+            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;ctz=Europe%2FOslo&amp;showPrint=0&amp;mode=AGENDA&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showNav=0&amp;showTitle=0&amp;title&amp;showDate=0&amp;src=MTU0OWZiYmExOTJmMmEyNDBjZDk4NjFjOWI4NjY1YTkxOGI1MmM5MTY4NWRlNTQ1YzY3NjAzNzcwZGNhMTg3M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986cb&amp;bgcolor=%23ffffff"
+            style="border-width:0"
+            width="800"
+            height="600"
+            frameborder="0"
+            scrolling="no"
             title="MSIS event calendar"
-            loading="lazy"
           ></iframe>
         </div>
       </section>
@@ -184,6 +198,7 @@
             <a href="mailto:msis.uis@gmail.com">msis.uis@gmail.com</a>
             <a href="https://instagram.com/msisuis" rel="noopener">Instagram @msisuis</a>
             <a href="https://www.facebook.com/muslim.stavanger/" rel="noopener">Facebook MSIS UiS</a>
+            <a href="https://chat.whatsapp.com/INE7ujuRCtnKVJvccBDqaj" rel="noopener">WhatsApp community</a>
           </div>
         </div>
         <div>
@@ -207,4 +222,5 @@
     </script>
   </body>
 </html>
+
 

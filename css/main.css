@@ -61,6 +61,7 @@ textarea:focus-visible {
 
 .site-header {
   background: rgba(255, 255, 255, 0.92);
+  -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(125, 170, 195, 0.25);
   position: sticky;
@@ -103,19 +104,43 @@ textarea:focus-visible {
   transition: background var(--transition), color var(--transition);
 }
 
-.nav-links a:hover,
-.nav-links a:focus-visible {
+.nav-links .btn {
+  padding: 0.65rem 1.4rem;
+  white-space: nowrap;
+  color: #fff;
+  flex-shrink: 0; /* Prevent Safari flexbox collapse */
+}
+
+.nav-links .btn:hover,
+.nav-links .btn:focus-visible {
+  color: #fff;
+}
+
+.nav-cta {
+  box-shadow: var(--shadow-soft);
+}
+
+.nav-links a:not(.btn):hover,
+.nav-links a:not(.btn):focus-visible {
   background: rgba(125, 170, 195, 0.15);
   color: var(--color-primary);
 }
 
 .nav-toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   color: var(--color-primary);
-  font-size: 1.75rem;
   cursor: pointer;
+  padding: 0.25rem;
+  line-height: 0;
+}
+
+.nav-toggle svg {
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .sr-only {
@@ -334,7 +359,7 @@ textarea:focus-visible {
 .cards-grid {
   display: grid;
   gap: 1.75rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
 }
 
 .card {
@@ -601,17 +626,19 @@ textarea:focus {
 
 .calendar-embed {
   background: var(--color-surface);
-  padding: 1.5rem;
+  padding: 0;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
+  overflow: hidden;
 }
 
 .calendar-embed iframe {
   width: 100%;
+  height: clamp(420px, 65vw, 540px);
   min-height: 420px;
   border: 0;
-  border-radius: var(--radius-sm);
-  filter: drop-shadow(0 20px 40px rgba(33, 64, 88, 0.2));
+  display: block;
+  background: var(--color-surface);
 }
 
 .error-page {
@@ -661,8 +688,67 @@ textarea:focus {
 .two-column {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   align-items: start;
+}
+
+.prayer-times-grid {
+  gap: 2.5rem;
+}
+
+.prayer-widget-card {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.prayer-widget-frame {
+  border: 1px solid rgba(47, 93, 124, 0.15);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  background: var(--color-surface);
+}
+
+.prayer-widget-frame iframe {
+  width: 100%;
+  height: clamp(420px, 65vw, 540px);
+  min-height: 420px;
+  border: 0;
+  display: block;
+}
+
+.widget-note {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.prayer-reminders {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.prayer-reminders-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.prayer-reminders-list li {
+  color: var(--color-muted);
+}
+
+.prayer-reminders-list strong {
+  color: var(--color-dark);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.prayer-reminders a {
+  color: var(--color-primary);
+  font-weight: 600;
 }
 
 .highlight-list {
@@ -718,6 +804,10 @@ textarea:focus {
   .hero-grid--join {
     grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
   }
+
+  .hero-grid--prayer {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  }
 }
 
 @media (max-width: 840px) {
@@ -745,6 +835,10 @@ textarea:focus {
   .nav-links a {
     width: 100%;
     padding: 0.75rem;
+  }
+
+  .nav-links .btn {
+    justify-content: center;
   }
 
   .nav-links.is-open {
