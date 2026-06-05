@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import CalligraphySection from '../../components/CalligraphySection.astro';
+import PillarsSection from '../../components/PillarsSection.astro';
+import EventCard from '../../components/EventCard.astro';
+import { locales, getTranslations, localizePath } from '../../i18n/config';
+import events from '../../data/events.json';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang!);
+
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+const future = events
+  .filter((e) => new Date(e.date + 'T00:00:00') >= today)
+  .sort((a, b) => a.date.localeCompare(b.date));
+
+// Fall back to the 3 most recent past events when nothing is upcoming.
+const displayEvents = future.length
+  ? future.slice(0, 3)
+  : events
+      .filter((e) => new Date(e.date + 'T00:00:00') < today)
+      .sort((a, b) => b.date.localeCompare(a.date))
+      .slice(0, 3);
+
+const isPast = future.length === 0;
+---
+
+<BaseLayout title={t.meta.home_title} description={t.meta.home_desc} lang={lang!}>
+  <HeroSection lang={lang!} t={t} />
+  <CalligraphySection t={t} />
+  <PillarsSection t={t} />
+
+  <section class="section events-preview" aria-label={t.events.heading}>
+    <div class="container">
+      <div class="ep-head fade-in">
+        <div>
+          <span class="eyebrow">{isPast ? t.events.label_past : t.events.label}</span>
+          <h2 class="section-heading">{t.events.heading}</h2>
+        </div>
+        <a class="btn btn-ghost" href={localizePath(lang!, 'events')}>{t.events.see_all}</a>
+      </div>
+      {
+        displayEvents.length ? (
+          <div class="grid grid-3">
+            {displayEvents.map((e) => <EventCard event={e} lang={lang!} t={t} />)}
+          </div>
+        ) : (
+          <p class="section-sub">{t.events.empty}</p>
+        )
+      }
+    </div>
+  </section>
+
+  <section class="cta-band fade-in" aria-label={t.cta_band.heading}>
+    <div class="container cta-inner">
+      <h2>{t.cta_band.heading}</h2>
+      <a class="btn btn-primary" href={localizePath(lang!, 'membership')}>{t.cta_band.button}</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .ep-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+    flex-wrap: wrap;
+  }
+  .cta-band {
+    background: var(--hero-bg);
+    color: #fff;
+  }
+  .cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+    padding-block: var(--space-2xl);
+  }
+  .cta-inner h2 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    max-width: 24ch;
+  }
+</style>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://msisuis.no/sitemap-index.xml

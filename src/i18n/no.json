@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "home_title": "MSiS — Muslimsk Studentsamfunn i Stavanger",
+    "home_desc": "Et inkluderende, studentdrevet fellesskap for muslimske studenter ved Universitetet i Stavanger. Stiftet 2014.",
+    "about_title": "Om oss — MSiS",
+    "about_desc": "Lær om MSiS, vårt formål, våre verdier og styret som leder det muslimske studentsamfunnet ved UiS.",
+    "events_title": "Arrangementer — MSiS",
+    "events_desc": "Kommende arrangementer, fredagsbønn, dialogkvelder og signaturprogrammer fra MSiS.",
+    "membership_title": "Bli medlem — MSiS",
+    "membership_desc": "Bli med i MSiS gratis. Åpent for alle muslimske studenter ved UiS.",
+    "contact_title": "Kontakt — MSiS",
+    "contact_desc": "Ta kontakt med MSiS. Finn oss på campus ved UiS.",
+    "prayer_title": "Bønnetider — MSiS",
+    "prayer_desc": "Daglige bønnetider for Stavanger, oppdatert automatisk.",
+    "ramadan_title": "Ramadan — MSiS",
+    "ramadan_desc": "MSiS sitt Ramadan-program: iftar-serie, refleksjon og fellesskap.",
+    "notfound_title": "Siden finnes ikke — MSiS"
+  },
+  "common": {
+    "loading": "Laster …",
+    "close": "Lukk",
+    "read_more": "Les mer",
+    "skip": "Hopp til hovedinnhold"
+  },
+  "nav": {
+    "home": "Hjem",
+    "about": "Om oss",
+    "events": "Arrangementer",
+    "membership": "Bli med",
+    "contact": "Kontakt",
+    "prayer": "Bønnetider",
+    "cta": "Bli medlem"
+  },
+  "hero": {
+    "tag": "Muslimsk Studentsamfunn i Stavanger · siden 2014",
+    "h1": "Et hjem for muslimske studenter på UiS",
+    "sub": "Inkluderende, studentdrevet og fremtidsorientert. Forankret i islams kjerneverdier.",
+    "cta_primary": "Bli medlem — gratis",
+    "cta_secondary": "Les om oss",
+    "stat_founded": "Stiftet",
+    "stat_membership": "Gratis",
+    "stat_membership_label": "Medlemskap",
+    "stat_partners": "Samarbeidspartnere"
+  },
+  "prayer_widget": {
+    "title": "Bønnetider — i dag",
+    "next": "Neste"
+  },
+  "calligraphy": {
+    "label": "Kjerneverdier",
+    "heading": "Hva vi er bygd på",
+    "mercy_arabic": "رَحْمَة",
+    "mercy_name": "Medfølelse",
+    "mercy_desc": "Vi møter hverandre med omsorg og forståelse",
+    "knowledge_arabic": "عِلْم",
+    "knowledge_name": "Kunnskap",
+    "knowledge_desc": "Vi søker læring og deler innsikt",
+    "community_arabic": "أُمَّة",
+    "community_name": "Fellesskap",
+    "community_desc": "Vi tar vare på hverandre og campus rundt oss"
+  },
+  "pillars": {
+    "label": "Hva vi gjør",
+    "heading": "Tre søyler",
+    "sub": "Alt vi gjør er forankret i tro, representasjon og dialog.",
+    "p1_title": "Tro og tilhørighet",
+    "p1_desc": "Rom for å utforske islamske verdier i fellesskap forankret i barmhjertighet.",
+    "p2_title": "Studentens stemme",
+    "p2_desc": "Vi representerer muslimske perspektiver i UiS, StOr og SiS sine prosesser.",
+    "p3_title": "Felles læring",
+    "p3_desc": "Dialoger og studiegrupper som inviterer alle inn i autentiske samtaler."
+  },
+  "events": {
+    "label": "Kommende arrangementer",
+    "label_past": "Tidligere arrangementer",
+    "heading": "Hva skjer?",
+    "see_all": "Se alle",
+    "when": "Når",
+    "where": "Hvor",
+    "empty": "Ingen kommende arrangementer akkurat nå — kom tilbake snart.",
+    "tags": {
+      "spiritual": "Spirituelt",
+      "dialogue": "Dialog",
+      "social": "Sosialt",
+      "educational": "Utdanning"
+    },
+    "programmes_label": "Faste tilbud",
+    "programmes_heading": "MSiS sine signaturprogrammer",
+    "prog1_title": "Dialogmøte",
+    "prog1_desc": "Åpne samtaler om tro, identitet og samfunn på tvers av bakgrunner.",
+    "prog2_title": "Internasjonal middag",
+    "prog2_desc": "En kveld med mat, kultur og fellesskap fra hele verden.",
+    "prog3_title": "Fredagsbønn",
+    "prog3_desc": "Ukentlig Juma med khutbah i bønnerommet på campus.",
+    "prog4_title": "Studieteknikk-workshop",
+    "prog4_desc": "Praktiske verktøy for å lykkes med studiene og balansere livet."
+  },
+  "membership": {
+    "label": "Bli en del av oss",
+    "heading": "Alle muslimske studenter ved UiS har en plass her",
+    "sub": "Gratis · Åpent · Studentdrevet",
+    "form_name": "Fullt navn",
+    "form_email": "E-post",
+    "form_nationality": "Nasjonalitet (valgfritt)",
+    "form_message": "Hvorfor vil du bli med? (valgfritt)",
+    "form_submit": "Bli med i MSiS — gratis",
+    "success_welcome": "Velkommen til MSiS!",
+    "success_text": "Takk for at du ble med. Vi tar kontakt med arrangementsvarsler snart.",
+    "quote": "«De troende er bare ett brorskap.» — Qur'an 49:10",
+    "quote_arabic": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ",
+    "benefit_1_title": "Arrangementsvarsler",
+    "benefit_1_desc": "Få beskjed om alle MSiS-arrangementer",
+    "benefit_2_title": "Stemmerett",
+    "benefit_2_desc": "Stem på generalforsamlingen",
+    "benefit_3_title": "Bli styremedlem",
+    "benefit_3_desc": "Bidra direkte til MSiS sitt arbeid"
+  },
+  "about": {
+    "story_label": "Vår historie",
+    "story_heading": "Et campus-hjem for muslimske studenter",
+    "story_text": "MSiS begynte som et studentinitiativ for å gi muslimske studenter ved UiS et støttende miljø. I dag jobber vi for trosinformert studentliv gjennom programmer, påvirkning og samarbeid.",
+    "glance_heading": "Inkluderende, studentdrevet, fremtidsorientert",
+    "glance_text": "Vi er en ikke-kommersiell, politisk uavhengig organisasjon. Alt vi gjør styres av våre medlemmer og er forankret i islams kjerneverdier: medfølelse, kunnskap og fellesskapsomsorg.",
+    "founded": "Stiftet",
+    "affiliations": "Samarbeider med",
+    "focus": "Fokus",
+    "focus_value": "Inkluderende · Studentdrevet · Fremtidsorientert",
+    "purpose_heading": "Formål og prinsipper",
+    "purpose_text": "Vårt mål er å støtte muslimske studenter åndelig, faglig og sosialt — og å bygge broer av forståelse på tvers av hele studentmiljøet.",
+    "constitution_heading": "Vedtektene i korthet",
+    "constitution_mission_title": "Misjon",
+    "constitution_mission": "Fremme enhet, læring og dialog blant muslimske studenter ved UiS.",
+    "constitution_membership_title": "Medlemskap",
+    "constitution_membership": "Åpent og gratis for alle studenter som deler våre verdier.",
+    "constitution_governance_title": "Styring",
+    "constitution_governance": "Demokratisk ledet av et valgt styre og en årlig generalforsamling.",
+    "collab_heading": "En samarbeidende tilnærming",
+    "collab_text": "Vi samarbeider tett med UiS, SiS og StOr for å sikre at muslimske studenters stemmer blir hørt i beslutninger som angår campuslivet.",
+    "board_label": "Styret 2024–2025",
+    "board_heading": "Møt menneskene bak MSiS"
+  },
+  "contact": {
+    "label": "Kontakt MSiS",
+    "heading": "Vi vil gjerne høre fra deg",
+    "sub": "Ta kontakt med spørsmål, samarbeidsideer, eller for å avtale et møte med styret.",
+    "location_heading": "Finn oss på UiS",
+    "location_text": "MSiS-samlinger foregår vanligvis i Kjølv Egelands bønnerom og SiS Studentsenteret (rom Ø-110)."
+  },
+  "prayer": {
+    "label": "Daglig tilbedelse · SiS Studentsenter rom Ø-110",
+    "heading": "Bønnetider for Stavanger",
+    "sub": "Hold deg oppdatert på de fem daglige bønnene mens du er på campus.",
+    "fajr": "Fajr",
+    "sunrise": "Soloppgang",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha",
+    "powered_by": "Beregning og oppdatering av",
+    "reminders_heading": "Campus-påminnelser",
+    "hijri_label": "Hijri-dato",
+    "gregorian_label": "Gregoriansk dato",
+    "countdown_label": "Neste bønn om",
+    "now": "Nå",
+    "tips_heading": "Nyttige tips",
+    "tips_method": "Tidene beregnes med Muslim World League-metoden for Stavanger.",
+    "tips_wudu": "Husk wudu før bønn — det finnes fasiliteter ved bønnerommet.",
+    "reminders_friday": "Fredagsbønn (Juma) kunngjøres ukentlig via Instagram og e-post.",
+    "reminders_spaces": "Bønnerommet i Kjølv Egelands hus og rom Ø-110 er åpne for alle studenter."
+  },
+  "ramadan": {
+    "label": "Velsignet måned",
+    "heading": "Ramadan med MSiS",
+    "sub": "Et program med iftar, refleksjon og fellesskap gjennom hele den hellige måneden.",
+    "countdown_until": "dager til Ramadan",
+    "countdown_into": "dag inn i Ramadan",
+    "countdown_over": "Ramadan er over — vi sees neste år, insha'Allah.",
+    "iftar_heading": "Iftar-serien",
+    "iftar_text": "Bli med på fire fellesiftar gjennom måneden — del måltidet, bønnen og samtalen.",
+    "reflection_heading": "Felles refleksjon",
+    "reflection_text": "Ukentlige samlinger for refleksjon, Qur'an-lesing og åndelig påfyll i fellesskap."
+  },
+  "cta_band": {
+    "heading": "Alle muslimske studenter ved UiS har en plass her",
+    "button": "Bli medlem"
+  },
+  "footer": {
+    "tagline": "MSiS fremmer enhet, læring og dialog blant muslimske studenter ved UiS.",
+    "connect": "Følg oss",
+    "links": "Snarveier",
+    "improve_translation": "Hjelp oss å forbedre denne oversettelsen"
+  },
+  "404": {
+    "heading": "Siden ble ikke funnet",
+    "sub": "Denne siden eksisterer ikke — men fellesskapet ditt gjør det.",
+    "back": "Tilbake til forsiden",
+    "prayer_link": "Gå til bønnetider"
+  },
+  "language_banner": {
+    "text": "Tilgjengelig på 11 språk — velg ditt",
+    "improve": "Hjelp oss å forbedre oversettelsen",
+    "ai_notice": "Denne oversettelsen er laget med KI. Ser du feil, "
+  },
+  "toast": {
+    "begins_in": "begynner om",
+    "minutes": "minutter",
+    "room": "rom Ø-110"
+  }
+}

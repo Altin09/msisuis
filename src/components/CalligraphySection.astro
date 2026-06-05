@@ -1,0 +1,85 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+const { t } = Astro.props;
+
+const values = [
+  { arabic: t.calligraphy.mercy_arabic, name: t.calligraphy.mercy_name, desc: t.calligraphy.mercy_desc },
+  { arabic: t.calligraphy.knowledge_arabic, name: t.calligraphy.knowledge_name, desc: t.calligraphy.knowledge_desc },
+  { arabic: t.calligraphy.community_arabic, name: t.calligraphy.community_name, desc: t.calligraphy.community_desc },
+];
+---
+
+<section class="section calligraphy" aria-label={t.calligraphy.heading}>
+  <div class="container">
+    <div class="cal-head fade-in">
+      <span class="eyebrow">{t.calligraphy.label}</span>
+      <h2 class="section-heading">{t.calligraphy.heading}</h2>
+      <div class="divider" aria-hidden="true">
+        <span class="diamond"></span>
+      </div>
+    </div>
+    <div class="grid grid-3 cal-grid">
+      {
+        values.map((v) => (
+          <article class="cal-card fade-in">
+            <p class="cal-arabic" lang="ar" dir="rtl">{v.arabic}</p>
+            <h3 class="cal-name">{v.name}</h3>
+            <p class="cal-desc">{v.desc}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .calligraphy {
+    background: var(--color-surface);
+  }
+  .cal-head {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+  }
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--space-md);
+  }
+  .divider::before,
+  .divider::after {
+    content: '';
+    height: 1px;
+    width: 60px;
+    background: var(--color-border-strong);
+  }
+  .diamond {
+    width: 8px;
+    height: 8px;
+    background: var(--color-accent);
+    transform: rotate(45deg);
+    margin-inline: var(--space-sm);
+  }
+  .cal-card {
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+  }
+  .cal-arabic {
+    font-family: var(--font-arabic);
+    font-size: 2.5rem;
+    line-height: 1.4;
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+  }
+  .cal-name {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-xs);
+  }
+  .cal-desc {
+    color: var(--color-text-muted);
+    max-width: 28ch;
+    margin-inline: auto;
+  }
+</style>

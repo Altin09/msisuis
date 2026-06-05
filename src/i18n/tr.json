@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "home_title": "MSiS — Stavanger Müslüman Öğrenci Topluluğu",
+    "home_desc": "Stavanger Üniversitesi'ndeki Müslüman öğrenciler için kapsayıcı, öğrenci öncülüğünde bir topluluk. 2014'te kuruldu.",
+    "about_title": "Hakkımızda — MSiS",
+    "about_desc": "MSiS'i, amacımızı, değerlerimizi ve üniversitedeki Müslüman öğrenci topluluğunu yöneten kurulu tanıyın.",
+    "events_title": "Etkinlikler — MSiS",
+    "events_desc": "Yaklaşan etkinlikler, Cuma namazı, diyalog akşamları ve MSiS'in özel programları.",
+    "membership_title": "Üye olun — MSiS",
+    "membership_desc": "MSiS'e ücretsiz katılın. Üniversitedeki tüm Müslüman öğrencilere açık.",
+    "contact_title": "İletişim — MSiS",
+    "contact_desc": "MSiS ile iletişime geçin. Bizi kampüste bulun.",
+    "prayer_title": "Namaz vakitleri — MSiS",
+    "prayer_desc": "Stavanger için günlük namaz vakitleri, otomatik güncellenir.",
+    "ramadan_title": "Ramazan — MSiS",
+    "ramadan_desc": "MSiS Ramazan programı: iftar serisi, tefekkür ve topluluk.",
+    "notfound_title": "Sayfa bulunamadı — MSiS"
+  },
+  "common": {
+    "loading": "Yükleniyor …",
+    "close": "Kapat",
+    "read_more": "Devamını oku",
+    "skip": "Ana içeriğe atla"
+  },
+  "nav": {
+    "home": "Ana sayfa",
+    "about": "Hakkımızda",
+    "events": "Etkinlikler",
+    "membership": "Katıl",
+    "contact": "İletişim",
+    "prayer": "Namaz vakitleri",
+    "cta": "Üye ol"
+  },
+  "hero": {
+    "tag": "Stavanger Müslüman Öğrenci Topluluğu · 2014'ten beri",
+    "h1": "Üniversitedeki Müslüman öğrenciler için bir yuva",
+    "sub": "Kapsayıcı, öğrenci öncülüğünde ve geleceğe odaklı. İslam'ın temel değerlerine dayalı.",
+    "cta_primary": "Üye ol — ücretsiz",
+    "cta_secondary": "Hakkımızda oku",
+    "stat_founded": "Kuruluş",
+    "stat_membership": "Ücretsiz",
+    "stat_membership_label": "Üyelik",
+    "stat_partners": "Ortaklar"
+  },
+  "prayer_widget": {
+    "title": "Namaz vakitleri — bugün",
+    "next": "Sonraki"
+  },
+  "calligraphy": {
+    "label": "Temel değerler",
+    "heading": "Üzerine inşa edildiğimiz şey",
+    "mercy_arabic": "رَحْمَة",
+    "mercy_name": "Merhamet",
+    "mercy_desc": "Birbirimize özen ve anlayışla yaklaşırız",
+    "knowledge_arabic": "عِلْم",
+    "knowledge_name": "İlim",
+    "knowledge_desc": "Öğrenmenin peşinden gider, bilgiyi paylaşırız",
+    "community_arabic": "أُمَّة",
+    "community_name": "Topluluk",
+    "community_desc": "Birbirimizi ve çevremizdeki kampüsü gözetiriz"
+  },
+  "pillars": {
+    "label": "Ne yapıyoruz",
+    "heading": "Üç sütun",
+    "sub": "Yaptığımız her şey iman, temsil ve diyaloga dayanır.",
+    "p1_title": "İman ve aidiyet",
+    "p1_desc": "Merhamete dayanan, İslami değerleri birlikte keşfetmek için bir alan.",
+    "p2_title": "Öğrencinin sesi",
+    "p2_desc": "Üniversite, StOr ve SiS süreçlerinde Müslüman bakış açılarını temsil ederiz.",
+    "p3_title": "Ortak öğrenme",
+    "p3_desc": "Herkesi içten sohbetlere davet eden diyaloglar ve çalışma grupları."
+  },
+  "events": {
+    "label": "Yaklaşan etkinlikler",
+    "label_past": "Geçmiş etkinlikler",
+    "heading": "Neler oluyor?",
+    "see_all": "Tümünü gör",
+    "when": "Ne zaman",
+    "where": "Nerede",
+    "empty": "Şu anda yaklaşan etkinlik yok — yakında tekrar bakın.",
+    "tags": {
+      "spiritual": "Manevi",
+      "dialogue": "Diyalog",
+      "social": "Sosyal",
+      "educational": "Eğitim"
+    },
+    "programmes_label": "Düzenli etkinlikler",
+    "programmes_heading": "MSiS imza programları",
+    "prog1_title": "Diyalog buluşması",
+    "prog1_desc": "Farklı geçmişlerden iman, kimlik ve toplum üzerine açık sohbetler.",
+    "prog2_title": "Uluslararası akşam yemeği",
+    "prog2_desc": "Dünyanın dört bir yanından yemek, kültür ve topluluk dolu bir akşam.",
+    "prog3_title": "Cuma namazı",
+    "prog3_desc": "Kampüs mescidinde hutbeli haftalık Cuma namazı.",
+    "prog4_title": "Çalışma becerileri atölyesi",
+    "prog4_desc": "Derslerinde başarılı olmak ve hayatını dengelemek için pratik araçlar."
+  },
+  "membership": {
+    "label": "Bize katıl",
+    "heading": "Üniversitedeki her Müslüman öğrencinin burada bir yeri var",
+    "sub": "Ücretsiz · Açık · Öğrenci öncülüğünde",
+    "form_name": "Ad soyad",
+    "form_email": "E-posta",
+    "form_nationality": "Uyruk (isteğe bağlı)",
+    "form_message": "Neden katılıyorsun? (isteğe bağlı)",
+    "form_submit": "MSiS'e katıl — ücretsiz",
+    "success_welcome": "MSiS'e hoş geldin!",
+    "success_text": "Katıldığın için teşekkürler. Yakında etkinlik bildirimleriyle iletişime geçeceğiz.",
+    "quote": "“Müminler ancak kardeştir.” — Kur'an 49:10",
+    "quote_arabic": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ",
+    "benefit_1_title": "Etkinlik bildirimleri",
+    "benefit_1_desc": "Tüm MSiS etkinliklerinden haberdar ol",
+    "benefit_2_title": "Oy hakkı",
+    "benefit_2_desc": "Genel kurulda oy kullan",
+    "benefit_3_title": "Kurul üyesi ol",
+    "benefit_3_desc": "MSiS'in çalışmalarına doğrudan katkıda bulun"
+  },
+  "about": {
+    "story_label": "Hikâyemiz",
+    "story_heading": "Müslüman öğrenciler için bir kampüs yuvası",
+    "story_text": "MSiS, üniversitedeki Müslüman öğrencilere destekleyici bir ortam sunmak için bir öğrenci girişimi olarak başladı. Bugün programlar, savunuculuk ve iş birliği yoluyla imana dayalı öğrenci yaşamı için çalışıyoruz.",
+    "glance_heading": "Kapsayıcı, öğrenci öncülüğünde, geleceğe odaklı",
+    "glance_text": "Biz ticari olmayan, siyasi açıdan bağımsız bir kuruluşuz. Yaptığımız her şey üyelerimizce yönetilir ve İslam'ın temel değerlerine dayanır: merhamet, ilim ve toplum özeni.",
+    "founded": "Kuruluş",
+    "affiliations": "İş birliği",
+    "focus": "Odak",
+    "focus_value": "Kapsayıcı · Öğrenci öncülüğünde · Geleceğe odaklı",
+    "purpose_heading": "Amaç ve ilkeler",
+    "purpose_text": "Amacımız Müslüman öğrencileri manevi, akademik ve sosyal olarak desteklemek — ve tüm öğrenci topluluğu boyunca anlayış köprüleri kurmaktır.",
+    "constitution_heading": "Tüzük bir bakışta",
+    "constitution_mission_title": "Misyon",
+    "constitution_mission": "Üniversitedeki Müslüman öğrenciler arasında birliği, öğrenmeyi ve diyaloğu teşvik etmek.",
+    "constitution_membership_title": "Üyelik",
+    "constitution_membership": "Değerlerimizi paylaşan tüm öğrencilere açık ve ücretsiz.",
+    "constitution_governance_title": "Yönetim",
+    "constitution_governance": "Seçilmiş bir kurul ve yıllık genel kurul tarafından demokratik biçimde yönetilir.",
+    "collab_heading": "İş birlikçi bir yaklaşım",
+    "collab_text": "Kampüs yaşamını şekillendiren kararlarda Müslüman öğrencilerin sesinin duyulması için üniversite, SiS ve StOr ile yakın çalışırız.",
+    "board_label": "Kurul 2024–2025",
+    "board_heading": "MSiS'in arkasındaki insanlarla tanışın"
+  },
+  "contact": {
+    "label": "MSiS ile iletişim",
+    "heading": "Sizden haber almak isteriz",
+    "sub": "Sorularınız, iş birliği fikirleriniz için ya da kurulla görüşme ayarlamak için bize ulaşın.",
+    "location_heading": "Bizi üniversitede bulun",
+    "location_text": "MSiS buluşmaları genellikle Kjølv Egeland mescidinde ve SiS Öğrenci Merkezi'nde (oda Ø-110) yapılır."
+  },
+  "prayer": {
+    "label": "Günlük ibadet · SiS Öğrenci Merkezi oda Ø-110",
+    "heading": "Stavanger için namaz vakitleri",
+    "sub": "Kampüsteyken beş vakit namazla uyumlu kalın.",
+    "fajr": "Sabah",
+    "sunrise": "Güneş doğuşu",
+    "dhuhr": "Öğle",
+    "asr": "İkindi",
+    "maghrib": "Akşam",
+    "isha": "Yatsı",
+    "powered_by": "Hesaplama ve güncelleme",
+    "reminders_heading": "Kampüs hatırlatmaları",
+    "hijri_label": "Hicri tarih",
+    "gregorian_label": "Miladi tarih",
+    "countdown_label": "Sonraki namaza",
+    "now": "Şimdi",
+    "tips_heading": "Faydalı ipuçları",
+    "tips_method": "Vakitler Stavanger için Müslüman Dünya Birliği yöntemiyle hesaplanır.",
+    "tips_wudu": "Namazdan önce abdesti unutmayın — mescidin yanında imkânlar mevcuttur.",
+    "reminders_friday": "Cuma namazı (Cuma) her hafta Instagram ve e-posta ile duyurulur.",
+    "reminders_spaces": "Kjølv Egeland binasındaki mescit ve oda Ø-110 tüm öğrencilere açıktır."
+  },
+  "ramadan": {
+    "label": "Mübarek ay",
+    "heading": "MSiS ile Ramazan",
+    "sub": "Mübarek ay boyunca iftar, tefekkür ve topluluk programı.",
+    "countdown_until": "gün Ramazan'a",
+    "countdown_into": "gün Ramazan'da",
+    "countdown_over": "Ramazan sona erdi — gelecek yıl görüşmek üzere, inşallah.",
+    "iftar_heading": "İftar serisi",
+    "iftar_text": "Ay boyunca dört topluluk iftarına katılın — yemeği, namazı ve sohbeti paylaşın.",
+    "reflection_heading": "Ortak tefekkür",
+    "reflection_text": "Birlikte tefekkür, Kur'an okuma ve manevi beslenme için haftalık buluşmalar."
+  },
+  "cta_band": {
+    "heading": "Üniversitedeki her Müslüman öğrencinin burada bir yeri var",
+    "button": "Üye ol"
+  },
+  "footer": {
+    "tagline": "MSiS, üniversitedeki Müslüman öğrenciler arasında birliği, öğrenmeyi ve diyaloğu teşvik eder.",
+    "connect": "Bizi takip edin",
+    "links": "Hızlı bağlantılar",
+    "improve_translation": "Bu çeviriyi iyileştirmemize yardım edin"
+  },
+  "404": {
+    "heading": "Sayfa bulunamadı",
+    "sub": "Bu sayfa yok — ama topluluğun var.",
+    "back": "Ana sayfaya dön",
+    "prayer_link": "Namaz vakitlerine git"
+  },
+  "language_banner": {
+    "text": "11 dilde mevcut — kendi dilinizi seçin",
+    "improve": "Çeviriyi iyileştirmemize yardım edin",
+    "ai_notice": "Bu çeviri yapay zeka ile üretildi. Hata fark ederseniz, "
+  },
+  "toast": {
+    "begins_in": "başlıyor:",
+    "minutes": "dakika",
+    "room": "oda Ø-110"
+  }
+}

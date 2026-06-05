@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "home_title": "MSiS — Muslim Student Society in Stavanger",
+    "home_desc": "An inclusive, student-led community for Muslim students at the University of Stavanger. Founded 2014.",
+    "about_title": "About — MSiS",
+    "about_desc": "Learn about MSiS, our purpose, our values and the board that leads the Muslim student society at UiS.",
+    "events_title": "Events — MSiS",
+    "events_desc": "Upcoming events, Friday prayer, dialogue evenings and signature programmes from MSiS.",
+    "membership_title": "Become a member — MSiS",
+    "membership_desc": "Join MSiS for free. Open to all Muslim students at UiS.",
+    "contact_title": "Contact — MSiS",
+    "contact_desc": "Get in touch with MSiS. Find us on campus at UiS.",
+    "prayer_title": "Prayer times — MSiS",
+    "prayer_desc": "Daily prayer times for Stavanger, updated automatically.",
+    "ramadan_title": "Ramadan — MSiS",
+    "ramadan_desc": "The MSiS Ramadan programme: iftar series, reflection and community.",
+    "notfound_title": "Page not found — MSiS"
+  },
+  "common": {
+    "loading": "Loading …",
+    "close": "Close",
+    "read_more": "Read more",
+    "skip": "Skip to main content"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "events": "Events",
+    "membership": "Join",
+    "contact": "Contact",
+    "prayer": "Prayer times",
+    "cta": "Become a member"
+  },
+  "hero": {
+    "tag": "Muslim Student Society in Stavanger · since 2014",
+    "h1": "A home for Muslim students at UiS",
+    "sub": "Inclusive, student-led and future-focused. Rooted in the core values of Islam.",
+    "cta_primary": "Become a member — free",
+    "cta_secondary": "Read about us",
+    "stat_founded": "Founded",
+    "stat_membership": "Free",
+    "stat_membership_label": "Membership",
+    "stat_partners": "Partners"
+  },
+  "prayer_widget": {
+    "title": "Prayer times — today",
+    "next": "Next"
+  },
+  "calligraphy": {
+    "label": "Core values",
+    "heading": "What we are built on",
+    "mercy_arabic": "رَحْمَة",
+    "mercy_name": "Compassion",
+    "mercy_desc": "We meet one another with care and understanding",
+    "knowledge_arabic": "عِلْم",
+    "knowledge_name": "Knowledge",
+    "knowledge_desc": "We seek learning and share insight",
+    "community_arabic": "أُمَّة",
+    "community_name": "Community",
+    "community_desc": "We care for one another and the campus around us"
+  },
+  "pillars": {
+    "label": "What we do",
+    "heading": "Three pillars",
+    "sub": "Everything we do is rooted in faith, representation and dialogue.",
+    "p1_title": "Faith and belonging",
+    "p1_desc": "Space to explore Islamic values together, rooted in mercy.",
+    "p2_title": "The student voice",
+    "p2_desc": "We represent Muslim perspectives in the processes of UiS, StOr and SiS.",
+    "p3_title": "Shared learning",
+    "p3_desc": "Dialogues and study groups that invite everyone into authentic conversation."
+  },
+  "events": {
+    "label": "Upcoming events",
+    "label_past": "Previous events",
+    "heading": "What's happening?",
+    "see_all": "See all",
+    "when": "When",
+    "where": "Where",
+    "empty": "No upcoming events right now — check back soon.",
+    "tags": {
+      "spiritual": "Spiritual",
+      "dialogue": "Dialogue",
+      "social": "Social",
+      "educational": "Educational"
+    },
+    "programmes_label": "Regular offerings",
+    "programmes_heading": "Signature MSiS programmes",
+    "prog1_title": "Dialogue meeting",
+    "prog1_desc": "Open conversations about faith, identity and society across backgrounds.",
+    "prog2_title": "International dinner",
+    "prog2_desc": "An evening of food, culture and community from around the world.",
+    "prog3_title": "Friday prayer",
+    "prog3_desc": "Weekly Juma with khutbah in the campus prayer room.",
+    "prog4_title": "Study skills workshop",
+    "prog4_desc": "Practical tools to succeed in your studies and balance life."
+  },
+  "membership": {
+    "label": "Become part of us",
+    "heading": "Every Muslim student at UiS has a place here",
+    "sub": "Free · Open · Student-led",
+    "form_name": "Full name",
+    "form_email": "Email",
+    "form_nationality": "Nationality (optional)",
+    "form_message": "Why are you joining? (optional)",
+    "form_submit": "Join MSiS — free",
+    "success_welcome": "Welcome to MSiS!",
+    "success_text": "Thank you for joining. We'll be in touch with event notifications soon.",
+    "quote": "“The believers are but a single brotherhood.” — Qur'an 49:10",
+    "quote_arabic": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ",
+    "benefit_1_title": "Event notifications",
+    "benefit_1_desc": "Be notified about all MSiS events",
+    "benefit_2_title": "Voting rights",
+    "benefit_2_desc": "Vote at the general assembly",
+    "benefit_3_title": "Become a board member",
+    "benefit_3_desc": "Contribute directly to the work of MSiS"
+  },
+  "about": {
+    "story_label": "Our story",
+    "story_heading": "A campus home for Muslim students",
+    "story_text": "MSiS began as a student initiative to give Muslim students at UiS a supportive environment. Today we work for faith-informed student life through programmes, advocacy and collaboration.",
+    "glance_heading": "Inclusive, student-led, future-focused",
+    "glance_text": "We are a non-commercial, politically independent organisation. Everything we do is governed by our members and rooted in the core values of Islam: compassion, knowledge and community care.",
+    "founded": "Founded",
+    "affiliations": "Collaborates with",
+    "focus": "Focus",
+    "focus_value": "Inclusive · Student-led · Future-focused",
+    "purpose_heading": "Purpose and principles",
+    "purpose_text": "Our aim is to support Muslim students spiritually, academically and socially — and to build bridges of understanding across the whole student community.",
+    "constitution_heading": "Constitution at a glance",
+    "constitution_mission_title": "Mission",
+    "constitution_mission": "Promote unity, learning and dialogue among Muslim students at UiS.",
+    "constitution_membership_title": "Membership",
+    "constitution_membership": "Open and free to all students who share our values.",
+    "constitution_governance_title": "Governance",
+    "constitution_governance": "Democratically led by an elected board and an annual general assembly.",
+    "collab_heading": "A collaborative approach",
+    "collab_text": "We work closely with UiS, SiS and StOr to ensure Muslim students' voices are heard in decisions that shape campus life.",
+    "board_label": "The board 2024–2025",
+    "board_heading": "Meet the people behind MSiS"
+  },
+  "contact": {
+    "label": "Contact MSiS",
+    "heading": "We'd love to hear from you",
+    "sub": "Reach out with questions, collaboration ideas, or to arrange a meeting with the board.",
+    "location_heading": "Find us at UiS",
+    "location_text": "MSiS gatherings usually take place in the Kjølv Egeland prayer room and the SiS Student Centre (room Ø-110)."
+  },
+  "prayer": {
+    "label": "Daily worship · SiS Student Centre room Ø-110",
+    "heading": "Prayer times for Stavanger",
+    "sub": "Stay aligned with the five daily prayers while you're on campus.",
+    "fajr": "Fajr",
+    "sunrise": "Sunrise",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha",
+    "powered_by": "Calculation and updates by",
+    "reminders_heading": "On-campus reminders",
+    "hijri_label": "Hijri date",
+    "gregorian_label": "Gregorian date",
+    "countdown_label": "Next prayer in",
+    "now": "Now",
+    "tips_heading": "Helpful tips",
+    "tips_method": "Times are calculated using the Muslim World League method for Stavanger.",
+    "tips_wudu": "Remember wudu before prayer — facilities are available by the prayer room.",
+    "reminders_friday": "Friday prayer (Juma) is announced weekly via Instagram and email.",
+    "reminders_spaces": "The prayer room in Kjølv Egeland's building and room Ø-110 are open to all students."
+  },
+  "ramadan": {
+    "label": "Blessed month",
+    "heading": "Ramadan with MSiS",
+    "sub": "A programme of iftar, reflection and community throughout the holy month.",
+    "countdown_until": "days until Ramadan",
+    "countdown_into": "day into Ramadan",
+    "countdown_over": "Ramadan has ended — see you next year, insha'Allah.",
+    "iftar_heading": "The iftar series",
+    "iftar_text": "Join four community iftars through the month — share the meal, the prayer and the conversation.",
+    "reflection_heading": "Shared reflection",
+    "reflection_text": "Weekly gatherings for reflection, Qur'an reading and spiritual nourishment together."
+  },
+  "cta_band": {
+    "heading": "Every Muslim student at UiS has a place here",
+    "button": "Become a member"
+  },
+  "footer": {
+    "tagline": "MSiS promotes unity, learning and dialogue among Muslim students at UiS.",
+    "connect": "Follow us",
+    "links": "Quick links",
+    "improve_translation": "Help us improve this translation"
+  },
+  "404": {
+    "heading": "Page not found",
+    "sub": "This page doesn't exist — but your community does.",
+    "back": "Back to home",
+    "prayer_link": "Go to prayer times"
+  },
+  "language_banner": {
+    "text": "Available in 11 languages — choose yours",
+    "improve": "Help us improve the translation",
+    "ai_notice": "This translation was generated by AI. If you notice errors, "
+  },
+  "toast": {
+    "begins_in": "begins in",
+    "minutes": "minutes",
+    "room": "room Ø-110"
+  }
+}

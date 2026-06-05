@@ -1,0 +1,130 @@
+---
+interface EventItem {
+  id: string;
+  title_no: string;
+  title_en: string;
+  date: string;
+  time: string;
+  location: string;
+  category: string;
+  description_no?: string;
+  description_en?: string;
+  recurring?: boolean;
+}
+
+interface Props {
+  event: EventItem;
+  lang: string;
+  t: Record<string, any>;
+}
+const { event, lang, t } = Astro.props;
+
+// Norwegian content for 'no', otherwise English source strings.
+const title = lang === 'no' ? event.title_no : event.title_en;
+const description = lang === 'no' ? event.description_no : event.description_en;
+
+// Map our locale codes to ones Intl understands; fall back to English.
+const intlMap: Record<string, string> = {
+  no: 'nb-NO', en: 'en-GB', sq: 'sq', ar: 'ar', fa: 'fa', tr: 'tr', id: 'id',
+  ur: 'ur', so: 'so', ce: 'ru', zgh: 'fr',
+};
+const d = new Date(event.date + 'T00:00:00');
+let day = String(d.getDate());
+let month = '';
+try {
+  month = new Intl.DateTimeFormat(intlMap[lang] ?? 'en', { month: 'short' }).format(d);
+} catch {
+  month = new Intl.DateTimeFormat('en', { month: 'short' }).format(d);
+}
+
+const catLabel = t.events.tags[event.category] ?? event.category;
+---
+
+<article class="event-card fade-in">
+  <div class={`event-date cat-${event.category}`} aria-hidden="true">
+    <span class="event-day">{day}</span>
+    <span class="event-month">{month}</span>
+  </div>
+  <div class="event-body">
+    <span class={`event-tag tag-${event.category}`}>{catLabel}</span>
+    <h3 class="event-title">{title}</h3>
+    {description && <p class="event-desc">{description}</p>}
+    <p class="event-meta">
+      <time datetime={`${event.date}T${event.time}`}>{event.time}</time>
+      <span aria-hidden="true">·</span>
+      <span>{event.location}</span>
+    </p>
+  </div>
+</article>
+
+<style>
+  .event-card {
+    display: flex;
+    gap: var(--space-md);
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+    box-shadow: var(--shadow-sm);
+  }
+  .event-date {
+    flex: 0 0 auto;
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-md);
+    background: var(--color-primary);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+  .event-day {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .event-month {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 2px;
+  }
+  .cat-dialogue { background: var(--color-primary-mid); }
+  .cat-social { background: #b5862a; }
+  .cat-educational { background: #2a6f97; }
+  .event-body {
+    min-width: 0;
+  }
+  .event-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.18rem 0.6rem;
+    border-radius: var(--radius-pill);
+    background: var(--color-primary-light);
+    color: var(--color-primary-mid);
+    margin-bottom: var(--space-xs);
+  }
+  .tag-social { color: #8a5a00; background: rgba(181, 134, 42, 0.14); }
+  .tag-educational { color: #1f567a; background: rgba(42, 111, 151, 0.14); }
+  .event-title {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+  }
+  .event-desc {
+    color: var(--color-text-muted);
+    font-size: 0.92rem;
+    margin-bottom: var(--space-xs);
+  }
+  .event-meta {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    display: flex;
+    gap: var(--space-sm);
+    align-items: center;
+    flex-wrap: wrap;
+  }
+</style>

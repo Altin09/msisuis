@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PrayerWidget from '../../components/PrayerWidget.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { locales, getTranslations } from '../../i18n/config';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang!);
+
+const tips = [t.prayer.tips_method, t.prayer.tips_wudu];
+const reminders = [t.prayer.reminders_friday, t.prayer.reminders_spaces];
+---
+
+<BaseLayout title={t.meta.prayer_title} description={t.meta.prayer_desc} lang={lang!}>
+  <section class="section">
+    <div class="container">
+      <Breadcrumb lang={lang!} t={t} label={t.nav.prayer} />
+      <div class="fade-in page-head">
+        <span class="eyebrow">{t.prayer.label}</span>
+        <h1 class="section-heading">{t.prayer.heading}</h1>
+        <p class="section-sub">{t.prayer.sub}</p>
+      </div>
+
+      <div class="prayer-layout">
+        <div class="fade-in">
+          <PrayerWidget t={t} full={true} />
+        </div>
+
+        <div class="prayer-info">
+          <article class="card fade-in">
+            <h2 class="info-heading">{t.prayer.tips_heading}</h2>
+            <ul class="info-list">
+              {tips.map((x) => <li>{x}</li>)}
+            </ul>
+          </article>
+          <article class="card fade-in">
+            <h2 class="info-heading">{t.prayer.reminders_heading}</h2>
+            <ul class="info-list">
+              {reminders.map((x) => <li>{x}</li>)}
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head {
+    margin-bottom: var(--space-xl);
+    max-width: 60ch;
+  }
+  .prayer-layout {
+    display: grid;
+    gap: var(--space-xl);
+    align-items: start;
+  }
+  @media (min-width: 880px) {
+    .prayer-layout {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .prayer-info {
+    display: grid;
+    gap: var(--space-lg);
+  }
+  .info-heading {
+    font-size: 1.15rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-primary-mid);
+  }
+  .info-list {
+    display: grid;
+    gap: var(--space-sm);
+  }
+  .info-list li {
+    position: relative;
+    padding-inline-start: 1.4rem;
+    color: var(--color-text-muted);
+  }
+  .info-list li::before {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    top: 0.65em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-accent);
+  }
+</style>

@@ -1,0 +1,172 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BoardCard from '../../components/BoardCard.astro';
+import PillarsSection from '../../components/PillarsSection.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { locales, getTranslations, localizePath } from '../../i18n/config';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang!);
+
+const board = [
+  { initials: 'SH', name: 'Samir Hussain', role: 'Leder (President)', quote: 'Faith and student life walk hand in hand.' },
+  { initials: 'SM', name: 'Salavat Melhi', role: 'Nestleder (Vice President)', quote: 'MSiS is the bridge between campus and ummah.' },
+  { initials: 'AK', name: 'Altin Krasniqi', role: 'Kasserer & Nettansvarlig (Treasurer & Web Developer)', quote: 'I built the site you’re on right now.', accent: '#f5c842' },
+  { initials: 'MA', name: 'Massil Ait-Saadi', role: 'Kasserer (Co-Treasurer)', quote: 'Transparency in our finances reflects our integrity.' },
+  { initials: 'TP', name: 'Tasya Amalia Putri', role: 'PR-ansvarlig (Public Relations)', quote: 'Our stories deserve to be heard.' },
+  { initials: 'AQ', name: 'Anoosha Qureshi', role: 'Arrangementsleder (Activity Planner)', quote: 'Every gathering is a chance to build something lasting.' },
+];
+
+const constitution = [
+  { title: t.about.constitution_mission_title, text: t.about.constitution_mission },
+  { title: t.about.constitution_membership_title, text: t.about.constitution_membership },
+  { title: t.about.constitution_governance_title, text: t.about.constitution_governance },
+];
+---
+
+<BaseLayout title={t.meta.about_title} description={t.meta.about_desc} lang={lang!}>
+  <div class="container"><Breadcrumb lang={lang!} t={t} label={t.nav.about} /></div>
+  <section class="section about-hero">
+    <div class="container split">
+      <div class="fade-in">
+        <span class="eyebrow">{t.about.story_label}</span>
+        <h1 class="section-heading">{t.about.story_heading}</h1>
+        <p class="section-sub">{t.about.story_text}</p>
+        <div class="about-cta">
+          <a class="btn btn-solid" href={localizePath(lang!, 'membership')}>{t.nav.cta}</a>
+          <a class="btn btn-ghost" href={localizePath(lang!, 'contact')}>{t.nav.contact}</a>
+        </div>
+      </div>
+      <aside class="glance card fade-in">
+        <h2 class="glance-heading">{t.about.glance_heading}</h2>
+        <p class="glance-text">{t.about.glance_text}</p>
+        <dl class="glance-list">
+          <div><dt>{t.about.founded}</dt><dd>2014</dd></div>
+          <div><dt>{t.about.affiliations}</dt><dd>UiS · SiS · StOr</dd></div>
+          <div><dt>{t.about.focus}</dt><dd>{t.about.focus_value}</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section purpose" aria-label={t.about.purpose_heading}>
+    <div class="container fade-in narrow">
+      <span class="eyebrow">{t.about.purpose_heading}</span>
+      <p class="purpose-text">{t.about.purpose_text}</p>
+    </div>
+  </section>
+
+  <PillarsSection t={t} />
+
+  <section class="section" aria-label={t.about.constitution_heading}>
+    <div class="container">
+      <h2 class="section-heading fade-in">{t.about.constitution_heading}</h2>
+      <div class="grid grid-3">
+        {
+          constitution.map((c) => (
+            <article class="card fade-in">
+              <h3 class="con-title">{c.title}</h3>
+              <p>{c.text}</p>
+            </article>
+          ))
+        }
+      </div>
+      <article class="card collab fade-in">
+        <h3 class="con-title">{t.about.collab_heading}</h3>
+        <p>{t.about.collab_text}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section board" aria-label={t.about.board_heading}>
+    <div class="container">
+      <div class="fade-in board-head">
+        <span class="eyebrow">{t.about.board_label}</span>
+        <h2 class="section-heading">{t.about.board_heading}</h2>
+      </div>
+      <div class="grid grid-2 board-grid">
+        {board.map((m) => <BoardCard initials={m.initials} name={m.name} role={m.role} quote={m.quote} accentColor={m.accent} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .split {
+    display: grid;
+    gap: var(--space-xl);
+    align-items: start;
+  }
+  @media (min-width: 880px) {
+    .split {
+      grid-template-columns: 1.3fr 1fr;
+    }
+  }
+  .about-cta {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+    flex-wrap: wrap;
+  }
+  .glance-heading {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+  }
+  .glance-text {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+  }
+  .glance-list div {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding: 0.6rem 0;
+    border-top: 1px solid var(--color-border);
+  }
+  .glance-list dt {
+    color: var(--color-text-light);
+    font-size: 0.85rem;
+  }
+  .glance-list dd {
+    font-weight: 600;
+    text-align: end;
+  }
+  .purpose {
+    background: var(--color-surface);
+  }
+  .narrow {
+    max-width: 70ch;
+  }
+  .purpose-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  .con-title {
+    font-size: 1.1rem;
+    color: var(--color-primary-mid);
+    margin-bottom: var(--space-sm);
+  }
+  .collab {
+    margin-top: var(--space-lg);
+  }
+  .board-head {
+    margin-bottom: var(--space-xl);
+  }
+  .board-grid {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 640px) {
+    .board-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 980px) {
+    .board-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

@@ -1,0 +1,129 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EventCard from '../../components/EventCard.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { locales, getTranslations } from '../../i18n/config';
+import events from '../../data/events.json';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang!);
+
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+const upcoming = events
+  .filter((e) => new Date(e.date + 'T00:00:00') >= today)
+  .sort((a, b) => a.date.localeCompare(b.date));
+
+const past = events
+  .filter((e) => new Date(e.date + 'T00:00:00') < today)
+  .sort((a, b) => b.date.localeCompare(a.date));
+
+const programmes = [
+  { title: t.events.prog1_title, desc: t.events.prog1_desc },
+  { title: t.events.prog2_title, desc: t.events.prog2_desc },
+  { title: t.events.prog3_title, desc: t.events.prog3_desc },
+  { title: t.events.prog4_title, desc: t.events.prog4_desc },
+];
+---
+
+<BaseLayout title={t.meta.events_title} description={t.meta.events_desc} lang={lang!}>
+  <section class="section">
+    <div class="container">
+      <Breadcrumb lang={lang!} t={t} label={t.nav.events} />
+
+      {upcoming.length > 0 && (
+        <>
+          <div class="fade-in page-head">
+            <span class="eyebrow">{t.events.label}</span>
+            <h1 class="section-heading">{t.events.heading}</h1>
+          </div>
+          <div class="events-list">
+            {upcoming.map((e) => <EventCard event={e} lang={lang!} t={t} />)}
+          </div>
+        </>
+      )}
+
+      {past.length > 0 && (
+        <>
+          <div class={`fade-in page-head ${upcoming.length === 0 ? '' : 'past-head'}`}>
+            <span class="eyebrow">{t.events.label_past}</span>
+            {upcoming.length === 0 && <h1 class="section-heading">{t.events.heading}</h1>}
+          </div>
+          <div class="events-list">
+            {past.map((e) => <EventCard event={e} lang={lang!} t={t} />)}
+          </div>
+        </>
+      )}
+
+      {upcoming.length === 0 && past.length === 0 && (
+        <p class="section-sub">{t.events.empty}</p>
+      )}
+    </div>
+  </section>
+
+  <section class="section programmes" aria-label={t.events.programmes_heading}>
+    <div class="container">
+      <div class="fade-in page-head">
+        <span class="eyebrow">{t.events.programmes_label}</span>
+        <h2 class="section-heading">{t.events.programmes_heading}</h2>
+      </div>
+      <div class="grid grid-2 prog-grid">
+        {
+          programmes.map((p, i) => (
+            <article class="card prog-card fade-in">
+              <span class="prog-num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+              <h3 class="prog-title">{p.title}</h3>
+              <p class="prog-desc">{p.desc}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head {
+    margin-bottom: var(--space-xl);
+  }
+  .past-head {
+    margin-top: var(--space-2xl);
+  }
+  .events-list {
+    display: grid;
+    gap: var(--space-md);
+    max-width: 760px;
+  }
+  .programmes {
+    background: var(--color-surface);
+  }
+  .prog-grid {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) {
+    .prog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .prog-card {
+    position: relative;
+  }
+  .prog-num {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    letter-spacing: 0.1em;
+  }
+  .prog-title {
+    font-size: 1.15rem;
+    margin: var(--space-xs) 0;
+  }
+  .prog-desc {
+    color: var(--color-text-muted);
+  }
+</style>

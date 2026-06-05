@@ -1,0 +1,241 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { locales, getTranslations } from '../../i18n/config';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang!);
+
+const benefits = [
+  { title: t.membership.benefit_1_title, desc: t.membership.benefit_1_desc, icon: 'calendar' },
+  { title: t.membership.benefit_2_title, desc: t.membership.benefit_2_desc, icon: 'users' },
+  { title: t.membership.benefit_3_title, desc: t.membership.benefit_3_desc, icon: 'star' },
+];
+---
+
+<BaseLayout title={t.meta.membership_title} description={t.meta.membership_desc} lang={lang!}>
+  <section class="section">
+    <div class="container">
+      <Breadcrumb lang={lang!} t={t} label={t.nav.membership} />
+      <div class="fade-in page-head">
+        <span class="eyebrow">{t.membership.label}</span>
+        <h1 class="section-heading">{t.membership.heading}</h1>
+        <p class="section-sub">{t.membership.sub}</p>
+      </div>
+
+      <div class="join-grid">
+        <div class="card join-form-wrap fade-in">
+          <form
+            class="join-form"
+            id="join-form"
+            action="https://formspree.io/f/xrevbnzp"
+            method="POST"
+          >
+            <div class="field">
+              <label for="name">{t.membership.form_name}</label>
+              <input id="name" name="name" type="text" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="email">{t.membership.form_email}</label>
+              <input id="email" name="email" type="email" required autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="nationality">{t.membership.form_nationality}</label>
+              <input id="nationality" name="nationality" type="text" />
+            </div>
+            <div class="field">
+              <label for="message">{t.membership.form_message}</label>
+              <textarea id="message" name="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-solid join-submit">{t.membership.form_submit}</button>
+          </form>
+
+          <div class="join-success" id="join-success" hidden role="status" aria-live="polite">
+            <p class="bismillah" lang="ar" dir="rtl">بِسْمِ اللَّهِ</p>
+            <h2>{t.membership.success_welcome}</h2>
+            <p>{t.membership.success_text}</p>
+          </div>
+        </div>
+
+        <aside class="join-aside">
+          <ul class="benefits fade-in">
+            {
+              benefits.map((b) => (
+                <li class="benefit">
+                  <span class="benefit-icon" aria-hidden="true">
+                    {b.icon === 'calendar' && (
+                      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <rect x="3" y="5" width="18" height="16" rx="2" />
+                        <path d="M3 9h18M8 3v4M16 3v4" />
+                      </svg>
+                    )}
+                    {b.icon === 'users' && (
+                      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="9" cy="8" r="3" />
+                        <path d="M3 20a6 6 0 0112 0M16 6a3 3 0 010 6M21 20a6 6 0 00-4-5.6" />
+                      </svg>
+                    )}
+                    {b.icon === 'star' && (
+                      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17.8 6.2 20l1.2-6.2L2.8 9.5l6.3-.8z" />
+                      </svg>
+                    )}
+                  </span>
+                  <div>
+                    <h3>{b.title}</h3>
+                    <p>{b.desc}</p>
+                  </div>
+                </li>
+              ))
+            }
+          </ul>
+
+          <blockquote class="quran fade-in">
+            <p class="quran-ar" lang="ar" dir="rtl">{t.membership.quote_arabic}</p>
+            <footer>{t.membership.quote}</footer>
+          </blockquote>
+        </aside>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head {
+    margin-bottom: var(--space-xl);
+    max-width: 60ch;
+  }
+  .join-grid {
+    display: grid;
+    gap: var(--space-xl);
+  }
+  @media (min-width: 880px) {
+    .join-grid {
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: start;
+    }
+  }
+  .field {
+    margin-bottom: var(--space-md);
+  }
+  .field label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+  }
+  .field input,
+  .field textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
+    resize: vertical;
+  }
+  .field input:focus,
+  .field textarea:focus {
+    border-color: var(--color-primary-mid);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(15, 110, 86, 0.15);
+  }
+  .join-submit {
+    width: 100%;
+    margin-top: var(--space-sm);
+  }
+  .join-success {
+    text-align: center;
+    padding: var(--space-lg) 0;
+  }
+  .bismillah {
+    font-family: var(--font-arabic);
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+  }
+  .join-success h2 {
+    font-size: 1.4rem;
+    margin-bottom: var(--space-xs);
+  }
+  .join-success p {
+    color: var(--color-text-muted);
+  }
+  .benefits {
+    display: grid;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+  }
+  .benefit {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+  }
+  .benefit-icon {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary-light);
+    color: var(--color-primary-mid);
+  }
+  .benefit h3 {
+    font-size: 1rem;
+  }
+  .benefit p {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+  .quran {
+    background: var(--color-primary-dark);
+    color: #fff;
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+  }
+  .quran-ar {
+    font-family: var(--font-arabic);
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: var(--color-accent);
+    margin-bottom: var(--space-md);
+  }
+  .quran footer {
+    color: #cfe3da;
+    font-size: 0.95rem;
+  }
+</style>
+
+<script>
+  const setupJoinForm = () => {
+    const form = document.getElementById('join-form') as HTMLFormElement | null;
+    const success = document.getElementById('join-success');
+    if (!form || !success) return;
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' },
+        });
+        if (res.ok) {
+          form.hidden = true;
+          success.hidden = false;
+        } else {
+          form.submit();
+        }
+      } catch {
+        form.submit();
+      }
+    });
+  };
+  document.addEventListener('astro:page-load', setupJoinForm);
+</script>

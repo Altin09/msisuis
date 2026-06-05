@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "home_title": "MSiS — Shoqata e Studentëve Myslimanë në Stavanger",
+    "home_desc": "Një komunitet gjithëpërfshirës i udhëhequr nga studentët për studentët myslimanë të Universitetit të Stavanger. Themeluar në 2014.",
+    "about_title": "Rreth nesh — MSiS",
+    "about_desc": "Mëso rreth MSiS, qëllimit tonë, vlerave tona dhe bordit që udhëheq shoqatën e studentëve myslimanë.",
+    "events_title": "Ngjarjet — MSiS",
+    "events_desc": "Ngjarjet e ardhshme, namazi i xhumasë, mbrëmjet e dialogut dhe programet e veçanta të MSiS.",
+    "membership_title": "Bëhu anëtar — MSiS",
+    "membership_desc": "Bashkohu me MSiS falas. Hapur për të gjithë studentët myslimanë të universitetit.",
+    "contact_title": "Kontakt — MSiS",
+    "contact_desc": "Na kontakto. Na gjej në kampus.",
+    "prayer_title": "Kohët e namazit — MSiS",
+    "prayer_desc": "Kohët ditore të namazit për Stavanger, të përditësuara automatikisht.",
+    "ramadan_title": "Ramazani — MSiS",
+    "ramadan_desc": "Programi i Ramazanit të MSiS: seria e iftarit, reflektimi dhe bashkësia.",
+    "notfound_title": "Faqja nuk u gjet — MSiS"
+  },
+  "common": {
+    "loading": "Duke u ngarkuar …",
+    "close": "Mbyll",
+    "read_more": "Lexo më shumë",
+    "skip": "Kalo te përmbajtja kryesore"
+  },
+  "nav": {
+    "home": "Kryefaqja",
+    "about": "Rreth nesh",
+    "events": "Ngjarjet",
+    "membership": "Bashkohu",
+    "contact": "Kontakt",
+    "prayer": "Kohët e namazit",
+    "cta": "Bëhu anëtar"
+  },
+  "hero": {
+    "tag": "Shoqata e Studentëve Myslimanë në Stavanger · që nga 2014",
+    "h1": "Një shtëpi për studentët myslimanë në universitet",
+    "sub": "Gjithëpërfshirëse, e udhëhequr nga studentët dhe e orientuar nga e ardhmja. E rrënjosur në vlerat themelore të Islamit.",
+    "cta_primary": "Bëhu anëtar — falas",
+    "cta_secondary": "Lexo rreth nesh",
+    "stat_founded": "Themeluar",
+    "stat_membership": "Falas",
+    "stat_membership_label": "Anëtarësia",
+    "stat_partners": "Partnerë"
+  },
+  "prayer_widget": {
+    "title": "Kohët e namazit — sot",
+    "next": "I radhës"
+  },
+  "calligraphy": {
+    "label": "Vlerat themelore",
+    "heading": "Mbi çfarë jemi ndërtuar",
+    "mercy_arabic": "رَحْمَة",
+    "mercy_name": "Mëshira",
+    "mercy_desc": "Ne takohemi me kujdes dhe mirëkuptim",
+    "knowledge_arabic": "عِلْم",
+    "knowledge_name": "Dija",
+    "knowledge_desc": "Ne kërkojmë dijen dhe ndajmë njohuritë",
+    "community_arabic": "أُمَّة",
+    "community_name": "Bashkësia",
+    "community_desc": "Ne kujdesemi për njëri-tjetrin dhe kampusin rreth nesh"
+  },
+  "pillars": {
+    "label": "Çfarë bëjmë",
+    "heading": "Tre shtylla",
+    "sub": "Gjithçka që bëjmë është e rrënjosur në besim, përfaqësim dhe dialog.",
+    "p1_title": "Besimi dhe përkatësia",
+    "p1_desc": "Hapësirë për të eksploruar vlerat islame së bashku, të rrënjosura në mëshirë.",
+    "p2_title": "Zëri i studentit",
+    "p2_desc": "Ne përfaqësojmë perspektivat myslimane në proceset e universitetit, StOr dhe SiS.",
+    "p3_title": "Mësimi i përbashkët",
+    "p3_desc": "Dialogë dhe grupe studimi që ftojnë të gjithë në biseda autentike."
+  },
+  "events": {
+    "label": "Ngjarjet e ardhshme",
+    "label_past": "Ngjarjet e kaluara",
+    "heading": "Çfarë po ndodh?",
+    "see_all": "Shiko të gjitha",
+    "when": "Kur",
+    "where": "Ku",
+    "empty": "Nuk ka ngjarje të ardhshme tani — kontrollo sërish së shpejti.",
+    "tags": {
+      "spiritual": "Shpirtëror",
+      "dialogue": "Dialog",
+      "social": "Social",
+      "educational": "Arsimor"
+    },
+    "programmes_label": "Oferta të rregullta",
+    "programmes_heading": "Programet e veçanta të MSiS",
+    "prog1_title": "Takimi i dialogut",
+    "prog1_desc": "Biseda të hapura rreth besimit, identitetit dhe shoqërisë nga sfonde të ndryshme.",
+    "prog2_title": "Darkë ndërkombëtare",
+    "prog2_desc": "Një mbrëmje me ushqim, kulturë dhe bashkësi nga e gjithë bota.",
+    "prog3_title": "Namazi i xhumasë",
+    "prog3_desc": "Xhuma javore me hutbe në xhaminë e kampusit.",
+    "prog4_title": "Punëtori e aftësive të studimit",
+    "prog4_desc": "Mjete praktike për të pasur sukses në studime dhe për të balancuar jetën."
+  },
+  "membership": {
+    "label": "Bëhu pjesë e nesh",
+    "heading": "Çdo student mysliman i universitetit ka një vend këtu",
+    "sub": "Falas · Hapur · I udhëhequr nga studentët",
+    "form_name": "Emri i plotë",
+    "form_email": "Email",
+    "form_nationality": "Kombësia (opsionale)",
+    "form_message": "Pse po bashkohesh? (opsionale)",
+    "form_submit": "Bashkohu me MSiS — falas",
+    "success_welcome": "Mirë se vjen në MSiS!",
+    "success_text": "Faleminderit që u bashkove. Do të të kontaktojmë me njoftime për ngjarje së shpejti.",
+    "quote": "«Besimtarët janë vetëm vëllezër.» — Kurani 49:10",
+    "quote_arabic": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ",
+    "benefit_1_title": "Njoftime për ngjarjet",
+    "benefit_1_desc": "Merr lajme për të gjitha ngjarjet e MSiS",
+    "benefit_2_title": "E drejta e votës",
+    "benefit_2_desc": "Voto në mbledhjen e përgjithshme",
+    "benefit_3_title": "Bëhu anëtar bordi",
+    "benefit_3_desc": "Kontribuo drejtpërdrejt në punën e MSiS"
+  },
+  "about": {
+    "story_label": "Historia jonë",
+    "story_heading": "Një shtëpi universitare për studentët myslimanë",
+    "story_text": "MSiS filloi si një iniciativë studentore për t'u dhënë studentëve myslimanë të universitetit një mjedis mbështetës. Sot punojmë për një jetë studentore të frymëzuar nga besimi nëpërmjet programeve, avokatisë dhe bashkëpunimit.",
+    "glance_heading": "Gjithëpërfshirëse, e udhëhequr nga studentët, e orientuar nga e ardhmja",
+    "glance_text": "Ne jemi një organizatë jofitimprurëse dhe e pavarur politikisht. Gjithçka që bëjmë drejtohet nga anëtarët tanë dhe është e rrënjosur në vlerat themelore të Islamit: mëshira, dija dhe kujdesi për bashkësinë.",
+    "founded": "Themeluar",
+    "affiliations": "Bashkëpunon me",
+    "focus": "Fokusi",
+    "focus_value": "Gjithëpërfshirëse · E udhëhequr nga studentët · E orientuar nga e ardhmja",
+    "purpose_heading": "Qëllimi dhe parimet",
+    "purpose_text": "Qëllimi ynë është të mbështesim studentët myslimanë shpirtërisht, akademikisht dhe socialisht — dhe të ndërtojmë ura mirëkuptimi në të gjithë komunitetin studentor.",
+    "constitution_heading": "Statuti në shkurtimisht",
+    "constitution_mission_title": "Misioni",
+    "constitution_mission": "Promovimi i unitetit, të nxënit dhe dialogut ndërmjet studentëve myslimanë të universitetit.",
+    "constitution_membership_title": "Anëtarësia",
+    "constitution_membership": "Hapur dhe falas për të gjithë studentët që ndajnë vlerat tona.",
+    "constitution_governance_title": "Qeverisja",
+    "constitution_governance": "Drejtohet demokratikisht nga një bord i zgjedhur dhe një mbledhje e përgjithshme vjetore.",
+    "collab_heading": "Një qasje bashkëpunuese",
+    "collab_text": "Punojmë ngushtë me universitetin, SiS dhe StOr për të siguruar që zërat e studentëve myslimanë të dëgjohen në vendimet që formësojnë jetën e kampusit.",
+    "board_label": "Bordi 2024–2025",
+    "board_heading": "Njihu me njerëzit pas MSiS"
+  },
+  "contact": {
+    "label": "Kontakto MSiS",
+    "heading": "Do të dëgjonim me kënaqësi nga ju",
+    "sub": "Na kontakto me pyetje, ide bashkëpunimi, ose për të organizuar një takim me bordin.",
+    "location_heading": "Na gjej në universitet",
+    "location_text": "Takimet e MSiS zakonisht zhvillohen në dhomën e namazit të Kjølv Egeland dhe Qendrën e Studentëve SiS (dhoma Ø-110)."
+  },
+  "prayer": {
+    "label": "Adhurim ditor · Qendra e Studentëve SiS dhoma Ø-110",
+    "heading": "Kohët e namazit për Stavanger",
+    "sub": "Qëndro i lidhur me pesë namazet ditore ndërkohë që je në kampus.",
+    "fajr": "Sabahu",
+    "sunrise": "Lindja e diellit",
+    "dhuhr": "Dreka",
+    "asr": "Ikindia",
+    "maghrib": "Akshami",
+    "isha": "Jacia",
+    "powered_by": "Llogaritja dhe përditësimi nga",
+    "reminders_heading": "Kujtesat e kampusit",
+    "hijri_label": "Data hixhri",
+    "gregorian_label": "Data gregoriane",
+    "countdown_label": "Namazi i radhës për",
+    "now": "Tani",
+    "tips_heading": "Këshilla të dobishme",
+    "tips_method": "Kohët llogariten me metodën e Lidhjes Botërore Myslimane për Stavanger.",
+    "tips_wudu": "Mos harro abdesin para namazit — ka ambiente pranë dhomës së namazit.",
+    "reminders_friday": "Namazi i xhumasë njoftohet çdo javë nëpërmjet Instagram dhe emailit.",
+    "reminders_spaces": "Dhoma e namazit në ndërtesën Kjølv Egeland dhe dhoma Ø-110 janë të hapura për të gjithë studentët."
+  },
+  "ramadan": {
+    "label": "Muaji i bekuar",
+    "heading": "Ramazani me MSiS",
+    "sub": "Një program iftari, reflektimi dhe bashkësie gjatë gjithë muajit të shenjtë.",
+    "countdown_until": "ditë deri në Ramazan",
+    "countdown_into": "ditë në Ramazan",
+    "countdown_over": "Ramazani ka mbaruar — shihemi vitin e ardhshëm, insha'Allah.",
+    "iftar_heading": "Seria e iftarit",
+    "iftar_text": "Bashkohu në katër iftare komunitar gjatë muajit — ndaj ushqimin, namazin dhe bisedën.",
+    "reflection_heading": "Reflektim i përbashkët",
+    "reflection_text": "Takime javore për reflektim, lexim Kurani dhe ushqim shpirtëror së bashku."
+  },
+  "cta_band": {
+    "heading": "Çdo student mysliman i universitetit ka një vend këtu",
+    "button": "Bëhu anëtar"
+  },
+  "footer": {
+    "tagline": "MSiS promovon unitetin, të nxënit dhe dialogun ndërmjet studentëve myslimanë të universitetit.",
+    "connect": "Na ndiq",
+    "links": "Lidhje të shpejta",
+    "improve_translation": "Na ndihmo të përmirësojmë këtë përkthim"
+  },
+  "404": {
+    "heading": "Faqja nuk u gjet",
+    "sub": "Kjo faqe nuk ekziston — por bashkësia jote ekziston.",
+    "back": "Kthehu në kryefaqe",
+    "prayer_link": "Shko te kohët e namazit"
+  },
+  "language_banner": {
+    "text": "E disponueshme në 11 gjuhë — zgjedh tënden",
+    "improve": "Na ndihmo të përmirësojmë përkthimin",
+    "ai_notice": "Ky përkthim është gjeneruar nga AI. Nëse vëren gabime, "
+  },
+  "toast": {
+    "begins_in": "fillon për",
+    "minutes": "minuta",
+    "room": "dhoma Ø-110"
+  }
+}

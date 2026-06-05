@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GeometricPattern from '../components/GeometricPattern.astro';
+import { getTranslations, defaultLocale, localizePath } from '../i18n/config';
+
+// The static 404 fallback uses the default locale.
+const lang = defaultLocale;
+const t = getTranslations(lang);
+---
+
+<BaseLayout title={t.meta.notfound_title} description={t['404'].sub} lang={lang}>
+  <section class="notfound">
+    <GeometricPattern opacity={0.05} color="var(--color-primary)" />
+    <div class="container notfound-inner">
+      <p class="bismillah" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+      <p class="big-404" aria-hidden="true">404</p>
+      <h1 class="nf-heading">{t['404'].heading}</h1>
+      <p class="nf-sub">{t['404'].sub}</p>
+      <div class="nf-cta">
+        <a class="btn btn-solid" href={localizePath(lang)}>{t['404'].back}</a>
+        <a class="btn btn-ghost" href={localizePath(lang, 'prayer')}>{t['404'].prayer_link}</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .notfound {
+    position: relative;
+    overflow: hidden;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+  }
+  .notfound-inner {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  .bismillah {
+    font-family: var(--font-arabic);
+    font-size: 1.6rem;
+    color: var(--color-primary-mid);
+    margin-bottom: var(--space-md);
+  }
+  .big-404 {
+    font-size: clamp(5rem, 18vw, 11rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-primary);
+    letter-spacing: -0.03em;
+  }
+  .nf-heading {
+    font-size: 1.6rem;
+    margin-bottom: var(--space-sm);
+  }
+  .nf-sub {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+  }
+  .nf-cta {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+</style>

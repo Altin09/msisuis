@@ -1,0 +1,79 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+const { t } = Astro.props;
+
+const pillars = [
+  { title: t.pillars.p1_title, desc: t.pillars.p1_desc, icon: 'faith' },
+  { title: t.pillars.p2_title, desc: t.pillars.p2_desc, icon: 'voice' },
+  { title: t.pillars.p3_title, desc: t.pillars.p3_desc, icon: 'learn' },
+];
+---
+
+<section class="section pillars" aria-label={t.pillars.heading}>
+  <div class="container">
+    <div class="fade-in pillars-head">
+      <span class="eyebrow">{t.pillars.label}</span>
+      <h2 class="section-heading">{t.pillars.heading}</h2>
+      <p class="section-sub">{t.pillars.sub}</p>
+    </div>
+    <div class="grid grid-3">
+      {
+        pillars.map((p) => (
+          <article class="card pillar-card fade-in">
+            <span class="pillar-icon" aria-hidden="true">
+              {p.icon === 'faith' && (
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 21s-7-4.35-7-10a7 7 0 0114 0c0 5.65-7 10-7 10z" />
+                  <circle cx="12" cy="11" r="2.5" />
+                </svg>
+              )}
+              {p.icon === 'voice' && (
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M3 11l18-8-8 18-2-7-8-3z" />
+                </svg>
+              )}
+              {p.icon === 'learn' && (
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M3 7l9-4 9 4-9 4-9-4z" />
+                  <path d="M7 10v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5" />
+                </svg>
+              )}
+            </span>
+            <h3 class="pillar-title">{p.title}</h3>
+            <p class="pillar-desc">{p.desc}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .pillars-head {
+    margin-bottom: var(--space-xl);
+    max-width: 60ch;
+  }
+  .pillar-card {
+    padding: var(--space-xl);
+  }
+  .pillar-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: var(--color-primary-light);
+    color: var(--color-primary-mid);
+    margin-bottom: var(--space-md);
+  }
+  .pillar-title {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-sm);
+  }
+  .pillar-desc {
+    color: var(--color-text-muted);
+  }
+</style>

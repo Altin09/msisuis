@@ -1,0 +1,104 @@
+---
+import { locales, localeNames } from '../i18n/config';
+
+interface Props {
+  lang: string;
+  compact?: boolean;
+}
+const { lang, compact = false } = Astro.props;
+
+// Current path stripped of its locale prefix, e.g. "/en/about" -> "about".
+const segments = Astro.url.pathname.split('/').filter(Boolean);
+const rest = segments.slice(1).join('/');
+const subPath = rest ? `/${rest}` : '';
+---
+
+<details class={`lang-switch ${compact ? 'lang-switch--compact' : ''}`}>
+  <summary aria-label="Language">
+    <span class="lang-current">{lang.toUpperCase()}</span>
+    <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true" class="chev">
+      <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </summary>
+  <ul class="lang-menu">
+    {
+      locales.map((code) => (
+        <li>
+          <a
+            href={`/${code}${subPath}`}
+            hreflang={code}
+            aria-current={code === lang ? 'true' : undefined}
+            class={code === lang ? 'is-active' : ''}
+          >
+            <span class="code">{code.toUpperCase()}</span>
+            <span class="name">{localeNames[code]}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</details>
+
+<style>
+  .lang-switch {
+    position: relative;
+  }
+  summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0.4rem 0.7rem;
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-pill);
+    font-size: 0.85rem;
+    font-weight: 600;
+    user-select: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  .chev {
+    transition: transform 0.2s ease;
+  }
+  details[open] .chev {
+    transform: rotate(180deg);
+  }
+  .lang-menu {
+    position: absolute;
+    inset-inline-end: 0;
+    top: calc(100% + 6px);
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-xs);
+    min-width: 200px;
+    z-index: 150;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+  .lang-menu a {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 0.5rem 0.7rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+  }
+  .lang-menu a:hover {
+    background: var(--color-primary-light);
+  }
+  .lang-menu a.is-active {
+    color: var(--color-primary-mid);
+    font-weight: 600;
+  }
+  .lang-menu .code {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--color-text-light);
+    min-width: 2.4em;
+  }
+</style>

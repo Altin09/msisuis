@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "home_title": "MSiS — Tamsmunt n Inelmaden Imeslmen deg Stavanger",
+    "home_desc": "Tamsmunt yeldin i yiwen, yettwasewjeden s inelmaden, i inelmaden imeslmen n Tesdawit n Stavanger. Tettwasbedd deg 2014.",
+    "about_title": "Fell-aneɣ — MSiS",
+    "about_desc": "Issin MSiS, iswi-nneɣ, azalen-nneɣ d usqamu i yessufuɣen tamsmunt n inelmaden imeslmen.",
+    "events_title": "Tidyanin — MSiS",
+    "events_desc": "Tidyanin i d-iteddun, taẓallit n Jjemɛa, tideggwin n umyannan d wahilen uzzigen n MSiS.",
+    "membership_title": "Ili d amɛeggal — MSiS",
+    "membership_desc": "Rnu ɣer MSiS baṭel. Yeldi i akk inelmaden imeslmen n tesdawit.",
+    "contact_title": "Nermes — MSiS",
+    "contact_desc": "Nermes MSiS. Af-aɣ deg tesdawit.",
+    "prayer_title": "Lewqat n teẓallit — MSiS",
+    "prayer_desc": "Lewqat n teẓallit n wass i Stavanger, ttwaleqqamen s wudem awurman.",
+    "ramadan_title": "Ṛemḍan — MSiS",
+    "ramadan_desc": "Ahil n Ṛemḍan n MSiS: tilɣa n lefṭur, taxemmemt d tmetti.",
+    "notfound_title": "Asebter ur yettwaf ara — MSiS"
+  },
+  "common": {
+    "loading": "Yessalay …",
+    "close": "Mdel",
+    "read_more": "Ɣer ugar",
+    "skip": "Zgel ɣer ugbur agejdan"
+  },
+  "nav": {
+    "home": "Agejdan",
+    "about": "Fell-aneɣ",
+    "events": "Tidyanin",
+    "membership": "Rnu",
+    "contact": "Nermes",
+    "prayer": "Lewqat n teẓallit",
+    "cta": "Ili d amɛeggal"
+  },
+  "hero": {
+    "tag": "Tamsmunt n Inelmaden Imeslmen deg Stavanger · seg 2014",
+    "h1": "Axxam i inelmaden imeslmen n tesdawit",
+    "sub": "Yeldin, yettwasewjeden s inelmaden, yettmuqulen ɣer uzekka. Yeẓẓa deg wazalen igejdanen n Islam.",
+    "cta_primary": "Ili d amɛeggal — baṭel",
+    "cta_secondary": "Ɣer fell-aneɣ",
+    "stat_founded": "Tettwasbedd",
+    "stat_membership": "Baṭel",
+    "stat_membership_label": "Tamɛeggalt",
+    "stat_partners": "Imdukal"
+  },
+  "prayer_widget": {
+    "title": "Lewqat n teẓallit — ass-a",
+    "next": "Win i d-iteddun"
+  },
+  "calligraphy": {
+    "label": "Azalen igejdanen",
+    "heading": "Ɣef wacu nbedd",
+    "mercy_arabic": "رَحْمَة",
+    "mercy_name": "Aḥnin",
+    "mercy_desc": "Nemyussan s wexamem d tegmi",
+    "knowledge_arabic": "عِلْم",
+    "knowledge_name": "Tamusni",
+    "knowledge_desc": "Nettnadi tamusni nbeṭṭu tamusni",
+    "community_arabic": "أُمَّة",
+    "community_name": "Tametti",
+    "community_desc": "Nettḥaraz iman-nneɣ d tesdawit i ɣ-d-yezzin"
+  },
+  "pillars": {
+    "label": "Acu nxeddem",
+    "heading": "Krad n tgejda",
+    "sub": "Ayen akk i nxeddem yeẓẓa deg liman, tasuddit d umyannan.",
+    "p1_title": "Liman d uɛelleq",
+    "p1_desc": "Amkan i unadi n wazalen n Islam s tdukli, yeẓẓan deg uḥnin.",
+    "p2_title": "Taɣect n unelmad",
+    "p2_desc": "Nessuddu tannumi n imeslmen deg ikalan n tesdawit, StOr d SiS.",
+    "p3_title": "Lemḍan i d-yeddan",
+    "p3_desc": "Imyannanen d igrawen n leqraya i d-issawalen i medden akk ɣer wawal uṣil."
+  },
+  "events": {
+    "label": "Tidyanin i d-iteddun",
+    "label_past": "Tidyanin yellan",
+    "heading": "D acu i d-iḍerrun?",
+    "see_all": "Wali akk",
+    "when": "Melmi",
+    "where": "Anida",
+    "empty": "Ulac tidyanin i d-iteddun tura — uɣal-d cwiṭ.",
+    "tags": {
+      "spiritual": "Aṛuḥan",
+      "dialogue": "Amyannan",
+      "social": "Anmettan",
+      "educational": "Aselmad"
+    },
+    "programmes_label": "Wahilen imezgiyen",
+    "programmes_heading": "Wahilen uzzigen n MSiS",
+    "prog1_title": "Timlilit n umyannan",
+    "prog1_desc": "Imyannanen yeldin ɣef liman, timagit d tmetti gar yal asatal.",
+    "prog2_title": "Imensi agraɣlan",
+    "prog2_desc": "Tadeggit n učči, idles d tmetti seg umaḍal meṛṛa.",
+    "prog3_title": "Taẓallit n Jjemɛa",
+    "prog3_desc": "Jjemɛa n yal dduṛt s lxuṭba deg uxxam n teẓallit n tesdawit.",
+    "prog4_title": "Taɣuri n tezmar n leqraya",
+    "prog4_desc": "Ifecka ilelliyen i wakken ad tferzeḍ deg leqraya ad tesserseḍ tudert."
+  },
+  "membership": {
+    "label": "Ili d aḥric seg-neɣ",
+    "heading": "Yal anelmad ameslem n tesdawit ɣur-s amkan dagi",
+    "sub": "Baṭel · Yeldi · S inelmaden",
+    "form_name": "Isem ummid",
+    "form_email": "Imayl",
+    "form_nationality": "Taɣelnawt (afran)",
+    "form_message": "Ayɣer i tettrenniḍ? (afran)",
+    "form_submit": "Rnu ɣer MSiS — baṭel",
+    "success_welcome": "Anṣuf yis-k ɣer MSiS!",
+    "success_text": "Tanemmirt imi i d-terniḍ. Ad k-d-nermes s yilɣa n tedyanin cwiṭ kan.",
+    "quote": "«Wid yumnen d atmaten kan i llan.» — Quran 49:10",
+    "quote_arabic": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ",
+    "benefit_1_title": "Ilɣa n tedyanin",
+    "benefit_1_desc": "Issin ɣef akk tedyanin n MSiS",
+    "benefit_2_title": "Azref n udɣar",
+    "benefit_2_desc": "Dɣer deg ugraw amatu",
+    "benefit_3_title": "Ili d aɛeggal n usqamu",
+    "benefit_3_desc": "Ɛiwen srid axeddim n MSiS"
+  },
+  "about": {
+    "story_label": "Tamacahut-nneɣ",
+    "story_heading": "Axxam n tesdawit i inelmaden imeslmen",
+    "story_text": "MSiS tebda d tasenfart n inelmaden i wakken ad d-tefk i inelmaden imeslmen n tesdawit tawennaḍt yettallalen. Ass-a nxeddem i tudert n inelmaden yeẓẓan deg liman s wahilen, tabɣest d ucrak.",
+    "glance_heading": "Yeldin, s inelmaden, yettmuqulen ɣer uzekka",
+    "glance_text": "Nekni d tuddsa ur nelli ara tadamsant, tilellit deg tsertit. Ayen akk i nxeddem ssuddun-t iɛeggalen-nneɣ yeẓẓa deg wazalen n Islam: aḥnin, tamusni d uḥraz n tmetti.",
+    "founded": "Tettwasbedd",
+    "affiliations": "Tettcrak akked",
+    "focus": "Aɣbalu",
+    "focus_value": "Yeldin · S inelmaden · Yettmuqulen ɣer uzekka",
+    "purpose_heading": "Iswi d yilugan",
+    "purpose_text": "Iswi-nneɣ d allal n inelmaden imeslmen s wudem aṛuḥan, aɣerfan d unmettan — d ubennu n tleggwa n tegmi ger tmetti n inelmaden meṛṛa.",
+    "constitution_heading": "Tamendawt s tewzel",
+    "constitution_mission_title": "Tawuri",
+    "constitution_mission": "Asnerni n tdukli, leqraya d umyannan ger inelmaden imeslmen n tesdawit.",
+    "constitution_membership_title": "Tamɛeggalt",
+    "constitution_membership": "Teldi tsettili baṭel i akk inelmaden yebḍan azalen-nneɣ.",
+    "constitution_governance_title": "Asefrek",
+    "constitution_governance": "Yettwasefrek s tegrawla s usqamu yettwafernen d ugraw amatu n useggas.",
+    "collab_heading": "Tarrayt n ucrak",
+    "collab_text": "Nxeddem s lqerb akked tesdawit, SiS d StOr i wakken ad tettwasel taɣect n inelmaden imeslmen deg yiɣtasen i isewjaden tudert n tesdawit.",
+    "board_label": "Asqamu 2024–2025",
+    "board_heading": "Mlil imdanen yellan deffir MSiS"
+  },
+  "contact": {
+    "label": "Nermes MSiS",
+    "heading": "Nebɣa ad nsel ɣur-k",
+    "sub": "Nermes s yisteqsiyen, tismucta n ucrak, neɣ i wesmekti n temlilit d usqamu.",
+    "location_heading": "Af-aɣ deg tesdawit",
+    "location_text": "Timlilin n MSiS ṭṭurunt deg uxxam n teẓallit Kjølv Egeland d uwanak n inelmaden SiS (taxxamt Ø-110)."
+  },
+  "prayer": {
+    "label": "Taɛbadt n wass · Uwanak n inelmaden SiS taxxamt Ø-110",
+    "heading": "Lewqat n teẓallit i Stavanger",
+    "sub": "Qqim d amsedrar d semmus n teẓallliwin n wass mi tellid deg tesdawit.",
+    "fajr": "Lfeǧr",
+    "sunrise": "Tuli n yiṭij",
+    "dhuhr": "Ḍḍuhr",
+    "asr": "Lɛeṣr",
+    "maghrib": "Lmeɣreb",
+    "isha": "Lɛica",
+    "powered_by": "Asiḍen d uleqqem sɣur",
+    "reminders_heading": "Ismekta n tesdawit",
+    "hijri_label": "Azemz aHijri",
+    "gregorian_label": "Azemz aGriguri",
+    "countdown_label": "Taẓallit i d-iteddun deg",
+    "now": "Tura",
+    "tips_heading": "Iwellihen infaɛen",
+    "tips_method": "Lewqat ttwasiḍnen s tarrayt n Muslim World League i Stavanger.",
+    "tips_wudu": "Mmekti-d luḍu uqbel teẓallit — llan yimukan ɣer tama n uxxam n teẓallit.",
+    "reminders_friday": "Taẓallit n Jjemɛa tettwaberreḥ yal dduṛt s Instagram d yimayl.",
+    "reminders_spaces": "Axxam n teẓallit deg uxxam Kjølv Egeland d texxamt Ø-110 ldin i akk inelmaden."
+  },
+  "ramadan": {
+    "label": "Ayyur ameṛbuḥ",
+    "heading": "Ṛemḍan d MSiS",
+    "sub": "Ahil n lefṭur, taxemmemt d tmetti deg wayyur ameṛbuḥ meṛṛa.",
+    "countdown_until": "wussan ar Ṛemḍan",
+    "countdown_into": "ass deg Ṛemḍan",
+    "countdown_over": "Ṛemḍan yekfa — ar useggas i d-iteddun, insha Allah.",
+    "iftar_heading": "Tilɣa n lefṭur",
+    "iftar_text": "Rnu ɣer kuẓ n lefṭuṛat n tmetti deg wayyur — bḍu učči, taẓallit d wawal.",
+    "reflection_heading": "Taxemmemt i d-yeddan",
+    "reflection_text": "Timlilin n yal dduṛt i texemmemt, taɣuri n Quran d uččur aṛuḥan s tdukli."
+  },
+  "cta_band": {
+    "heading": "Yal anelmad ameslem n tesdawit ɣur-s amkan dagi",
+    "button": "Ili d amɛeggal"
+  },
+  "footer": {
+    "tagline": "MSiS tessenray tadukli, leqraya d umyannan ger inelmaden imeslmen n tesdawit.",
+    "connect": "Ḍfer-aɣ",
+    "links": "Izdayen uzzilen",
+    "improve_translation": "Ɛiwen-aɣ ad nseggem tasuqilt-a"
+  },
+  "404": {
+    "heading": "Asebter ur yettwaf ara",
+    "sub": "Asebter-a ulac-it — maca tametti-k tella.",
+    "back": "Uɣal ɣer ugejdan",
+    "prayer_link": "Ddu ɣer lewqat n teẓallit"
+  },
+  "language_banner": {
+    "text": "Yella s 11 n tutlayin — fren tin-ik",
+    "improve": "Ɛiwen-aɣ ad nseggem tasuqilt",
+    "ai_notice": "Tasuqilt-a tettwaxdem s AI. Ma twalaḍ tuccḍiwin, "
+  },
+  "toast": {
+    "begins_in": "ad yebdu deg",
+    "minutes": "tisdatin",
+    "room": "taxxamt Ø-110"
+  }
+}

@@ -1,0 +1,304 @@
+---
+interface Props {
+  t: Record<string, any>;
+  full?: boolean;
+}
+const { t, full = false } = Astro.props;
+
+// API key -> translation key. Sunrise only shown in full mode.
+const rows = [
+  { api: 'Fajr', label: t.prayer.fajr, prayer: true },
+  { api: 'Sunrise', label: t.prayer.sunrise, prayer: false, fullOnly: true },
+  { api: 'Dhuhr', label: t.prayer.dhuhr, prayer: true },
+  { api: 'Asr', label: t.prayer.asr, prayer: true },
+  { api: 'Maghrib', label: t.prayer.maghrib, prayer: true },
+  { api: 'Isha', label: t.prayer.isha, prayer: true },
+].filter((r) => (full ? true : !r.fullOnly));
+---
+
+<div
+  class={`prayer-widget ${full ? 'prayer-widget--full' : 'prayer-widget--card'}`}
+  data-prayer
+  data-next-label={t.prayer_widget.next}
+>
+  <div class="pw-head">
+    <p class="pw-title">{full ? t.prayer.heading : t.prayer_widget.title}</p>
+    <p class="pw-hijri" data-hijri>
+      <span class="skeleton skeleton-text"></span>
+    </p>
+  </div>
+
+  {
+    full && (
+      <p class="pw-countdown" data-countdown>
+        <span class="pw-countdown-label">{t.prayer.countdown_label}</span>
+        <span class="pw-countdown-value" data-countdown-value>—</span>
+      </p>
+    )
+  }
+
+  <ul class="pw-list">
+    {
+      rows.map((r) => (
+        <li class="pw-row" data-prayer-row={r.prayer ? r.api : undefined}>
+          <span class="pw-name">{r.label}</span>
+          <span class="pw-time" data-time={r.api}>
+            <span class="skeleton skeleton-time" />
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+
+  <p class="pw-footer">
+    {t.prayer.powered_by}
+    <a href="https://aladhan.com" rel="noopener" target="_blank">Aladhan API</a>
+  </p>
+</div>
+
+<style>
+  .prayer-widget {
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+  }
+  .prayer-widget--card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #fff;
+    width: 100%;
+    max-width: 340px;
+    backdrop-filter: blur(6px);
+  }
+  .prayer-widget--full {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+  }
+  .pw-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+  }
+  .pw-title {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .pw-hijri {
+    font-size: 0.8rem;
+    opacity: 0.75;
+    min-width: 6ch;
+    text-align: end;
+  }
+  .pw-countdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm);
+    background: var(--color-primary-light);
+    color: var(--color-primary-mid);
+    border-radius: var(--radius-md);
+    padding: 0.6rem var(--space-md);
+    margin-bottom: var(--space-md);
+    font-weight: 600;
+  }
+  .pw-countdown-value {
+    font-variant-numeric: tabular-nums;
+    font-size: 1.1rem;
+  }
+  .pw-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .pw-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.55rem 0.6rem;
+    border-radius: var(--radius-sm);
+    border-bottom: 1px solid currentColor;
+    border-color: var(--color-border);
+  }
+  .prayer-widget--card .pw-row {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .pw-row:last-child {
+    border-bottom: 0;
+  }
+  .pw-row.is-next {
+    background: rgba(245, 200, 66, 0.16);
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+  .prayer-widget--full .pw-row.is-next {
+    color: var(--color-accent-dark);
+    background: rgba(245, 200, 66, 0.22);
+  }
+  .pw-name {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+  .pw-row.is-next .pw-name::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.4;
+      transform: scale(1.5);
+    }
+  }
+  .pw-time {
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+  }
+  .pw-next-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-inline-start: var(--space-sm);
+  }
+  .pw-footer {
+    margin-top: var(--space-md);
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }
+  .pw-footer a {
+    text-decoration: underline;
+  }
+  .prayer-widget--full .pw-footer a {
+    color: var(--color-primary-mid);
+  }
+  /* Loading skeletons */
+  .skeleton {
+    display: inline-block;
+    border-radius: 4px;
+    background: linear-gradient(
+      90deg,
+      rgba(128, 128, 128, 0.15) 25%,
+      rgba(128, 128, 128, 0.28) 37%,
+      rgba(128, 128, 128, 0.15) 63%
+    );
+    background-size: 400% 100%;
+    animation: shimmer 1.4s ease infinite;
+  }
+  .skeleton-time {
+    width: 48px;
+    height: 14px;
+  }
+  .skeleton-text {
+    width: 70px;
+    height: 11px;
+  }
+  @keyframes shimmer {
+    0% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+</style>
+
+<script>
+  const PRAYER_ORDER = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
+
+  function fmtCountdown(ms: number): string {
+    const total = Math.max(0, Math.floor(ms / 1000));
+    const h = Math.floor(total / 3600);
+    const m = Math.floor((total % 3600) / 60);
+    const s = total % 60;
+    const pad = (n: number) => String(n).padStart(2, '0');
+    return `${pad(h)}:${pad(m)}:${pad(s)}`;
+  }
+
+  async function initPrayerWidgets() {
+    const widgets = document.querySelectorAll<HTMLElement>('[data-prayer]');
+    if (!widgets.length) return;
+
+    let timings: Record<string, string> | null = null;
+    let hijri = '';
+    try {
+      const res = await fetch(
+        'https://api.aladhan.com/v1/timingsByCity?city=Stavanger&country=Norway&method=3'
+      );
+      const data = await res.json();
+      timings = data.data.timings;
+      const hj = data.data.date.hijri;
+      hijri = `${hj.day} ${hj.month.en} ${hj.year} AH`;
+    } catch (e) {
+      widgets.forEach((w) => {
+        const h = w.querySelector('[data-hijri]');
+        if (h) h.textContent = '—';
+      });
+      return;
+    }
+
+    // Build today's prayer datetimes for "next" detection.
+    const now = new Date();
+    const dt: Record<string, Date> = {};
+    Object.entries(timings).forEach(([k, v]) => {
+      const [hh, mm] = (v as string).split(':').map(Number);
+      const d = new Date(now);
+      d.setHours(hh, mm, 0, 0);
+      dt[k] = d;
+    });
+    let nextName = PRAYER_ORDER.find((p) => dt[p] && dt[p] > now) ?? null;
+    let nextTime = nextName ? dt[nextName] : null;
+    // After Isha, next prayer is tomorrow's Fajr.
+    if (!nextName) {
+      nextName = 'Fajr';
+      const f = new Date(dt['Fajr']);
+      f.setDate(f.getDate() + 1);
+      nextTime = f;
+    }
+
+    widgets.forEach((w) => {
+      const hEl = w.querySelector('[data-hijri]');
+      if (hEl) hEl.textContent = hijri;
+
+      w.querySelectorAll<HTMLElement>('[data-time]').forEach((el) => {
+        const key = el.dataset.time!;
+        el.textContent = timings![key] ?? '—';
+      });
+
+      // Highlight next prayer row + add badge.
+      const row = w.querySelector<HTMLElement>(`[data-prayer-row="${nextName}"]`);
+      if (row) {
+        row.classList.add('is-next');
+        const badge = document.createElement('span');
+        badge.className = 'pw-next-badge';
+        badge.textContent = w.dataset.nextLabel ?? 'Next';
+        row.querySelector('.pw-name')?.appendChild(badge);
+      }
+
+      // Countdown (full mode only).
+      const cdVal = w.querySelector<HTMLElement>('[data-countdown-value]');
+      if (cdVal && nextTime) {
+        const tick = () => {
+          cdVal.textContent = fmtCountdown(nextTime!.getTime() - Date.now());
+        };
+        tick();
+        const id = window.setInterval(tick, 1000);
+        // Clear interval on navigation to avoid leaks.
+        document.addEventListener('astro:before-swap', () => window.clearInterval(id), {
+          once: true,
+        });
+      }
+    });
+  }
+
+  document.addEventListener('astro:page-load', initPrayerWidgets);
+</script>

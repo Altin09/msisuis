@@ -1,0 +1,134 @@
+---
+import { localizePath } from '../i18n/config';
+
+interface Props {
+  lang: string;
+  t: Record<string, any>;
+}
+const { lang, t } = Astro.props;
+const year = new Date().getFullYear();
+
+const quickLinks = [
+  { href: localizePath(lang), key: 'home' },
+  { href: localizePath(lang, 'about'), key: 'about' },
+  { href: localizePath(lang, 'events'), key: 'events' },
+  { href: localizePath(lang, 'membership'), key: 'membership' },
+  { href: localizePath(lang, 'contact'), key: 'contact' },
+  { href: localizePath(lang, 'prayer'), key: 'prayer' },
+];
+
+const mailImprove =
+  'mailto:msis.uis@gmail.com?subject=' + encodeURIComponent('Translation improvement (' + lang + ')');
+---
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href={localizePath(lang)}>
+        <img src="/assets/msis-logo-transp-256.png" alt="MSiS logo" width="40" height="40" loading="lazy" />
+        <span>MSiS</span>
+      </a>
+      <p>{t.footer.tagline}</p>
+      <p class="copyright">© {year} MSiS · Muslimsk Studentsamfunn i Stavanger</p>
+      <p class="org-no">Org. no. 913 303 865</p>
+    </div>
+
+    <div>
+      <h2 class="footer-h">{t.footer.connect}</h2>
+      <ul>
+        <li><a href="mailto:msis.uis@gmail.com">msis.uis@gmail.com</a></li>
+        <li><a href="https://instagram.com/msisuis" rel="noopener" target="_blank">Instagram · @msisuis</a></li>
+        <li><a href="https://facebook.com/" rel="noopener" target="_blank">Facebook · MSIS UiS</a></li>
+        <li><a href="https://chat.whatsapp.com/" rel="noopener" target="_blank">WhatsApp</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="footer-h">{t.footer.links}</h2>
+      <ul>
+        {quickLinks.map((l) => <li><a href={l.href}>{t.nav[l.key]}</a></li>)}
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span class="org-bottom">Org. no. 913 303 865</span>
+      <a class="improve" href={mailImprove}>{t.footer.improve_translation}</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--footer-bg);
+    color: #cfe3da;
+    margin-top: var(--space-2xl);
+  }
+  .footer-grid {
+    display: grid;
+    gap: var(--space-xl);
+    padding-block: var(--space-2xl) var(--space-xl);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) {
+    .footer-grid {
+      grid-template-columns: 1.6fr 1fr 1fr;
+    }
+  }
+  .footer-brand .brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.15rem;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+  }
+  .footer-brand img { border-radius: 8px; }
+  .footer-brand p {
+    color: #9ab8ae;
+    max-width: 40ch;
+    font-size: 0.95rem;
+  }
+  .copyright {
+    margin-top: var(--space-md);
+    font-size: 0.82rem;
+    color: #6a8f82;
+  }
+  .org-no {
+    font-size: 0.78rem;
+    color: #4a6f62;
+    margin-top: 4px;
+  }
+  .footer-h {
+    color: #fff;
+    font-size: 0.95rem;
+    margin-bottom: var(--space-md);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .site-footer ul li { margin-bottom: 0.5rem; }
+  .site-footer a { color: #cfe3da; font-size: 0.92rem; }
+  .site-footer a:hover { color: var(--color-accent); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .footer-bottom-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    align-items: center;
+    justify-content: space-between;
+    padding-block: var(--space-md);
+  }
+  .org-bottom {
+    font-size: 0.82rem;
+    color: #4a6f62;
+  }
+  .improve {
+    font-size: 0.85rem;
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+</style>

@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "home_title": "MSiS — Ururka Ardayda Muslimka ah ee Stavanger",
+    "home_desc": "Bulsho loo dhan yahay oo ardaydu hoggaamiyaan oo loogu talagalay ardayda Muslimka ah ee Jaamacadda Stavanger. Waxaa la aasaasay 2014.",
+    "about_title": "Nagu saabsan — MSiS",
+    "about_desc": "Baro MSiS, ujeeddadayada, qiyamkayaga iyo guddiga hoggaamiya ururka ardayda Muslimka ah ee jaamacadda.",
+    "events_title": "Munaasabadaha — MSiS",
+    "events_desc": "Munaasabadaha soo socda, salaadda Jimcaha, fiidnimooyinka wadahadalka iyo barnaamijyada gaarka ah ee MSiS.",
+    "membership_title": "Noqo xubin — MSiS",
+    "membership_desc": "Ku biir MSiS bilaash. U furan dhammaan ardayda Muslimka ah ee jaamacadda.",
+    "contact_title": "Xiriir — MSiS",
+    "contact_desc": "La xiriir MSiS. Naga hel jaamacadda.",
+    "prayer_title": "Waqtiyada salaadda — MSiS",
+    "prayer_desc": "Waqtiyada salaadda maalinlaha ah ee Stavanger, si toos ah loo cusboonaysiiyo.",
+    "ramadan_title": "Ramadaan — MSiS",
+    "ramadan_desc": "Barnaamijka Ramadaan ee MSiS: taxanaha afurka, milicsiga iyo bulshada.",
+    "notfound_title": "Bogga lama helin — MSiS"
+  },
+  "common": {
+    "loading": "Soo dejinaya …",
+    "close": "Xir",
+    "read_more": "Akhri wax dheeraad ah",
+    "skip": "U bood nuxurka muhiimka ah"
+  },
+  "nav": {
+    "home": "Bogga hore",
+    "about": "Nagu saabsan",
+    "events": "Munaasabadaha",
+    "membership": "Ku biir",
+    "contact": "Xiriir",
+    "prayer": "Waqtiyada salaadda",
+    "cta": "Noqo xubin"
+  },
+  "hero": {
+    "tag": "Ururka Ardayda Muslimka ah ee Stavanger · ilaa 2014",
+    "h1": "Guri u ah ardayda Muslimka ah ee jaamacadda",
+    "sub": "Loo dhan yahay, ardaydu hoggaamiyaan oo mustaqbalka diiradda saara. Wuxuu ku dhisan yahay qiyamka aasaasiga ah ee Islaamka.",
+    "cta_primary": "Noqo xubin — bilaash",
+    "cta_secondary": "Wax naga akhri",
+    "stat_founded": "La aasaasay",
+    "stat_membership": "Bilaash",
+    "stat_membership_label": "Xubinnimo",
+    "stat_partners": "La-hawlgalayaal"
+  },
+  "prayer_widget": {
+    "title": "Waqtiyada salaadda — maanta",
+    "next": "Xigta"
+  },
+  "calligraphy": {
+    "label": "Qiyamka aasaasiga ah",
+    "heading": "Waxa aan ku dhisnay",
+    "mercy_arabic": "رَحْمَة",
+    "mercy_name": "Naxariis",
+    "mercy_desc": "Waxaan isula kulannaa daryeel iyo faham",
+    "knowledge_arabic": "عِلْم",
+    "knowledge_name": "Cilmi",
+    "knowledge_desc": "Waxaan raadinnaa barashada oo aan wadaagnaa aragtida",
+    "community_arabic": "أُمَّة",
+    "community_name": "Bulsho",
+    "community_desc": "Waxaan is-ilaalinnaa oo aan ilaalinaa jaamacadda nagu hareeraysan"
+  },
+  "pillars": {
+    "label": "Waxa aan qabanno",
+    "heading": "Saddex tiir",
+    "sub": "Wax kasta oo aan qabanno waxay ku dhisan yihiin iimaan, matalaad iyo wadahadal.",
+    "p1_title": "Iimaan iyo ka mid noqosho",
+    "p1_desc": "Meel lagu sahamiyo qiyamka Islaamka si wadajir ah, oo ku dhisan naxariis.",
+    "p2_title": "Codka ardayga",
+    "p2_desc": "Waxaan ka matalnaa aragtiyada Muslimiinta hannaanka jaamacadda, StOr iyo SiS.",
+    "p3_title": "Barasho wadajir ah",
+    "p3_desc": "Wadahadallo iyo kooxo waxbarasho oo qof walba ku martiqaada wada-hadal dhab ah."
+  },
+  "events": {
+    "label": "Munaasabadaha soo socda",
+    "label_past": "Munaasabadihii hore",
+    "heading": "Maxaa dhacaya?",
+    "see_all": "Arag dhammaan",
+    "when": "Goorma",
+    "where": "Halkee",
+    "empty": "Hadda ma jiraan munaasabado soo socda — dib u eeg dhowaan.",
+    "tags": {
+      "spiritual": "Ruuxi",
+      "dialogue": "Wadahadal",
+      "social": "Bulsho",
+      "educational": "Waxbarasho"
+    },
+    "programmes_label": "Barnaamijyo joogto ah",
+    "programmes_heading": "Barnaamijyada gaarka ah ee MSiS",
+    "prog1_title": "Kulanka wadahadalka",
+    "prog1_desc": "Wadahadallo furan oo ku saabsan iimaan, aqoonsi iyo bulsho oo asal kala duwan.",
+    "prog2_title": "Casho caalami ah",
+    "prog2_desc": "Fiid cunto, dhaqan iyo bulsho ka kala yimid adduunka oo dhan.",
+    "prog3_title": "Salaadda Jimcaha",
+    "prog3_desc": "Jimce toddobaadle ah oo khudbad leh oo qolka salaadda jaamacadda.",
+    "prog4_title": "Aqoon-kororsi xirfadaha waxbarashada",
+    "prog4_desc": "Qalab wax ku ool ah oo lagu guulaysto waxbarashada lag-na dheellitiro nolosha."
+  },
+  "membership": {
+    "label": "Noqo qayb naga mid ah",
+    "heading": "Arday kasta oo Muslim ah oo jaamacadda jooga meel buu halkan ku leeyahay",
+    "sub": "Bilaash · Furan · Ardaydu hoggaamiyaan",
+    "form_name": "Magaca oo dhan",
+    "form_email": "Iimayl",
+    "form_nationality": "Jinsiyad (ikhtiyaari)",
+    "form_message": "Maxaad u biiraysaa? (ikhtiyaari)",
+    "form_submit": "Ku biir MSiS — bilaash",
+    "success_welcome": "Ku soo dhowow MSiS!",
+    "success_text": "Mahadsanid ku biiristaada. Waxaan kula soo xiriiri doonnaa ogeysiisyada munaasabadaha dhowaan.",
+    "quote": "“Mu'miniintu waa kaliya walaalo.” — Qur'aan 49:10",
+    "quote_arabic": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ",
+    "benefit_1_title": "Ogeysiisyada munaasabadaha",
+    "benefit_1_desc": "La soco dhammaan munaasabadaha MSiS",
+    "benefit_2_title": "Xaqa codbixinta",
+    "benefit_2_desc": "Ka codee shirka guud",
+    "benefit_3_title": "Noqo xubin guddi",
+    "benefit_3_desc": "Si toos ah uga qayb qaado shaqada MSiS"
+  },
+  "about": {
+    "story_label": "Sheekadayada",
+    "story_heading": "Guri jaamacadeed oo loogu talagalay ardayda Muslimka ah",
+    "story_text": "MSiS waxay ku bilaabatay hindise arday si ay ardayda Muslimka ah ee jaamacadda u siiso jawi taageero leh. Maanta waxaan u shaqaynaa nolol arday oo iimaan ku dhisan iyada oo loo marayo barnaamijyo, u-doodid iyo iskaashi.",
+    "glance_heading": "Loo dhan yahay, ardaydu hoggaamiyaan, mustaqbalka diiradda saara",
+    "glance_text": "Waxaan nahay urur aan ganacsi ahayn oo siyaasad ahaan madax-bannaan. Wax kasta oo aan qabanno waxaa maamula xubnahayaga waxayna ku dhisan yihiin qiyamka aasaasiga ah ee Islaamka: naxariis, cilmi iyo daryeel bulsho.",
+    "founded": "La aasaasay",
+    "affiliations": "La kaashada",
+    "focus": "Diiradda",
+    "focus_value": "Loo dhan yahay · Ardaydu hoggaamiyaan · Mustaqbalka diiradda saara",
+    "purpose_heading": "Ujeeddo iyo mabaadii'",
+    "purpose_text": "Ujeeddadayadu waa inaan taageerno ardayda Muslimka ah dhinaca ruuxiga, waxbarasho iyo bulsho — oo aan dhisno buundooyin faham ah bulshada ardayda oo dhan.",
+    "constitution_heading": "Dastuurka si kooban",
+    "constitution_mission_title": "Hadafka",
+    "constitution_mission": "Kobcinta midnimo, waxbarasho iyo wadahadal dhexdooda ardayda Muslimka ah ee jaamacadda.",
+    "constitution_membership_title": "Xubinnimo",
+    "constitution_membership": "U furan oo bilaash u ah dhammaan ardayda qiyamkayaga wadaaga.",
+    "constitution_governance_title": "Maamul",
+    "constitution_governance": "Si dimuqraadi ah waxaa hoggaamiya guddi la doortay iyo shir guud oo sannadle ah.",
+    "collab_heading": "Hab iskaashi",
+    "collab_text": "Waxaan si dhow ula shaqaynaa jaamacadda, SiS iyo StOr si loo hubiyo in codka ardayda Muslimka ah laga maqlo go'aannada qaabeeya nolosha jaamacadda.",
+    "board_label": "Guddiga 2024–2025",
+    "board_heading": "La kulan dadka MSiS gadaasheeda jooga"
+  },
+  "contact": {
+    "label": "La xiriir MSiS",
+    "heading": "Waxaan jeclaan lahayn inaan kaa maqalno",
+    "sub": "Nala soo xiriir su'aalo, fikrado iskaashi, ama si aad u qabsato kulan guddiga.",
+    "location_heading": "Naga hel jaamacadda",
+    "location_text": "Kulannada MSiS badanaa waxay ka dhacaan qolka salaadda Kjølv Egeland iyo Xarunta Ardayda SiS (qolka Ø-110)."
+  },
+  "prayer": {
+    "label": "Cibaado maalinle · Xarunta Ardayda SiS qolka Ø-110",
+    "heading": "Waqtiyada salaadda ee Stavanger",
+    "sub": "La jaanqaad shanta salaadood ee maalinlaha ah inta aad jaamacadda joogto.",
+    "fajr": "Fajr",
+    "sunrise": "Qorraxsoobax",
+    "dhuhr": "Duhur",
+    "asr": "Casar",
+    "maghrib": "Maqrib",
+    "isha": "Cishe",
+    "powered_by": "Xisaab iyo cusboonaysiin",
+    "reminders_heading": "Xusuusinno jaamacadeed",
+    "hijri_label": "Taariikhda Hijri",
+    "gregorian_label": "Taariikhda Giriigoor",
+    "countdown_label": "Salaadda xigta gudaheed",
+    "now": "Hadda",
+    "tips_heading": "Talooyin faa'iido leh",
+    "tips_method": "Waqtiyada waxaa lagu xisaabiyaa habka Muslim World League ee Stavanger.",
+    "tips_wudu": "Xusuuso weyso ka hor salaadda — agagaarka qolka salaadda waxaa jira tas-hiilaad.",
+    "reminders_friday": "Salaadda Jimcaha waxaa toddobaad kasta lagu ogeysiiyaa Instagram iyo iimayl.",
+    "reminders_spaces": "Qolka salaadda ee dhismaha Kjølv Egeland iyo qolka Ø-110 way u furan yihiin dhammaan ardayda."
+  },
+  "ramadan": {
+    "label": "Bisha barakaysan",
+    "heading": "Ramadaan la MSiS",
+    "sub": "Barnaamij afur, milicsi iyo bulsho ah bisha barakaysan oo dhan.",
+    "countdown_until": "maalmood ka hor Ramadaan",
+    "countdown_into": "maalin gudaha Ramadaan",
+    "countdown_over": "Ramadaan wuu dhammaaday — sanadka soo socda aan is aragno, insha'Allah.",
+    "iftar_heading": "Taxanaha afurka",
+    "iftar_text": "Ku biir afar afur oo bulsho ah inta bisha socoto — wadaag cuntada, salaadda iyo wadahadalka.",
+    "reflection_heading": "Milicsi wadajir ah",
+    "reflection_text": "Kulanno toddobaadle ah oo milicsi, akhrinta Qur'aanka iyo quudin ruuxi ah si wadajir ah."
+  },
+  "cta_band": {
+    "heading": "Arday kasta oo Muslim ah oo jaamacadda jooga meel buu halkan ku leeyahay",
+    "button": "Noqo xubin"
+  },
+  "footer": {
+    "tagline": "MSiS waxay kobcisaa midnimo, waxbarasho iyo wadahadal dhexdooda ardayda Muslimka ah ee jaamacadda.",
+    "connect": "Na soo raac",
+    "links": "Xiriiro degdeg ah",
+    "improve_translation": "Naga caawi inaan tarjumaaddan hagaajinno"
+  },
+  "404": {
+    "heading": "Bogga lama helin",
+    "sub": "Boggani ma jiro — laakiin bulshadaadu way jirtaa.",
+    "back": "Ku noqo bogga hore",
+    "prayer_link": "Aad waqtiyada salaadda"
+  },
+  "language_banner": {
+    "text": "Lagu heli karo 11 luqadood — dooro taada",
+    "improve": "Naga caawi inaan tarjumaadda hagaajinno",
+    "ai_notice": "Tarjumaaddan waxaa sameeyay AI. Haddii aad aragto qalad, "
+  },
+  "toast": {
+    "begins_in": "bilaabmaysa",
+    "minutes": "daqiiqo",
+    "room": "qolka Ø-110"
+  }
+}

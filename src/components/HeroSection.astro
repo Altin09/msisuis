@@ -1,0 +1,132 @@
+---
+import { localizePath } from '../i18n/config';
+import GeometricPattern from './GeometricPattern.astro';
+import PrayerWidget from './PrayerWidget.astro';
+
+interface Props {
+  lang: string;
+  t: Record<string, any>;
+}
+const { lang, t } = Astro.props;
+---
+
+<section class="hero" aria-label={t.hero.h1}>
+  <GeometricPattern opacity={0.07} color="#ffffff" />
+  <div class="container hero-inner">
+    <div class="hero-content fade-in">
+      <span class="hero-tag">{t.hero.tag}</span>
+      <h1 class="hero-h1">{t.hero.h1}</h1>
+      <p class="hero-sub">{t.hero.sub}</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href={localizePath(lang, 'membership')}>
+          {t.hero.cta_primary}
+        </a>
+        <a class="btn btn-ghost-light" href={localizePath(lang, 'about')}>
+          {t.hero.cta_secondary}
+        </a>
+      </div>
+      <dl class="hero-stats">
+        <div>
+          <dt>{t.hero.stat_founded}</dt>
+          <dd>2014</dd>
+        </div>
+        <div>
+          <dt>{t.hero.stat_membership_label}</dt>
+          <dd>{t.hero.stat_membership}</dd>
+        </div>
+        <div>
+          <dt>{t.hero.stat_partners}</dt>
+          <dd>UiS · SiS · StOr</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="hero-aside fade-in">
+      <PrayerWidget t={t} />
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background: var(--hero-bg);
+    color: #fff;
+    padding-block: var(--space-2xl);
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: var(--space-2xl);
+    align-items: center;
+  }
+  @media (min-width: 900px) {
+    .hero-inner {
+      grid-template-columns: 1fr auto;
+    }
+  }
+  .hero-content {
+    max-width: 480px;
+  }
+  .hero-tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 0.35rem 0.9rem;
+    border-radius: var(--radius-pill);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-bottom: var(--space-md);
+  }
+  .hero-h1 {
+    font-size: clamp(2rem, 5vw, 3.1rem);
+    line-height: 1.1;
+    margin-bottom: var(--space-md);
+  }
+  .hero-sub {
+    font-size: 1.1rem;
+    color: #cfe3da;
+    margin-bottom: var(--space-lg);
+  }
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+  }
+  .hero-stats {
+    display: flex;
+    gap: var(--space-lg);
+  }
+  .hero-stats div {
+    padding-inline-end: var(--space-lg);
+    border-inline-end: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .hero-stats div:last-child {
+    border-inline-end: 0;
+    padding-inline-end: 0;
+  }
+  .hero-stats dt {
+    font-size: 0.78rem;
+    color: #9ab8ae;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .hero-stats dd {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .hero-aside {
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 899px) {
+    .hero-aside {
+      display: none;
+    }
+  }
+</style>

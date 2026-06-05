@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "home_title": "MSiS — Masyarakat Mahasiswa Muslim di Stavanger",
+    "home_desc": "Komunitas inklusif yang dipimpin mahasiswa untuk mahasiswa Muslim di Universitas Stavanger. Didirikan 2014.",
+    "about_title": "Tentang kami — MSiS",
+    "about_desc": "Kenali MSiS, tujuan, nilai-nilai kami, dan pengurus yang memimpin masyarakat mahasiswa Muslim di universitas.",
+    "events_title": "Acara — MSiS",
+    "events_desc": "Acara mendatang, salat Jumat, malam dialog, dan program unggulan dari MSiS.",
+    "membership_title": "Jadi anggota — MSiS",
+    "membership_desc": "Bergabunglah dengan MSiS secara gratis. Terbuka untuk semua mahasiswa Muslim di universitas.",
+    "contact_title": "Kontak — MSiS",
+    "contact_desc": "Hubungi MSiS. Temukan kami di kampus.",
+    "prayer_title": "Waktu salat — MSiS",
+    "prayer_desc": "Waktu salat harian untuk Stavanger, diperbarui otomatis.",
+    "ramadan_title": "Ramadan — MSiS",
+    "ramadan_desc": "Program Ramadan MSiS: rangkaian iftar, refleksi, dan kebersamaan.",
+    "notfound_title": "Halaman tidak ditemukan — MSiS"
+  },
+  "common": {
+    "loading": "Memuat …",
+    "close": "Tutup",
+    "read_more": "Baca selengkapnya",
+    "skip": "Lewati ke konten utama"
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang kami",
+    "events": "Acara",
+    "membership": "Gabung",
+    "contact": "Kontak",
+    "prayer": "Waktu salat",
+    "cta": "Jadi anggota"
+  },
+  "hero": {
+    "tag": "Masyarakat Mahasiswa Muslim di Stavanger · sejak 2014",
+    "h1": "Rumah bagi mahasiswa Muslim di universitas",
+    "sub": "Inklusif, dipimpin mahasiswa, dan berorientasi masa depan. Berakar pada nilai-nilai inti Islam.",
+    "cta_primary": "Jadi anggota — gratis",
+    "cta_secondary": "Baca tentang kami",
+    "stat_founded": "Didirikan",
+    "stat_membership": "Gratis",
+    "stat_membership_label": "Keanggotaan",
+    "stat_partners": "Mitra"
+  },
+  "prayer_widget": {
+    "title": "Waktu salat — hari ini",
+    "next": "Berikutnya"
+  },
+  "calligraphy": {
+    "label": "Nilai inti",
+    "heading": "Fondasi kami",
+    "mercy_arabic": "رَحْمَة",
+    "mercy_name": "Kasih sayang",
+    "mercy_desc": "Kami menyambut satu sama lain dengan perhatian dan pengertian",
+    "knowledge_arabic": "عِلْم",
+    "knowledge_name": "Ilmu",
+    "knowledge_desc": "Kami mencari ilmu dan berbagi wawasan",
+    "community_arabic": "أُمَّة",
+    "community_name": "Komunitas",
+    "community_desc": "Kami saling menjaga dan menjaga kampus di sekitar kami"
+  },
+  "pillars": {
+    "label": "Yang kami lakukan",
+    "heading": "Tiga pilar",
+    "sub": "Semua yang kami lakukan berakar pada iman, perwakilan, dan dialog.",
+    "p1_title": "Iman dan rasa memiliki",
+    "p1_desc": "Ruang untuk menjelajahi nilai-nilai Islam bersama, berakar pada kasih sayang.",
+    "p2_title": "Suara mahasiswa",
+    "p2_desc": "Kami mewakili perspektif Muslim dalam proses universitas, StOr, dan SiS.",
+    "p3_title": "Pembelajaran bersama",
+    "p3_desc": "Dialog dan kelompok belajar yang mengajak semua orang ke percakapan tulus."
+  },
+  "events": {
+    "label": "Acara mendatang",
+    "label_past": "Acara sebelumnya",
+    "heading": "Apa yang sedang berlangsung?",
+    "see_all": "Lihat semua",
+    "when": "Kapan",
+    "where": "Di mana",
+    "empty": "Belum ada acara mendatang saat ini — periksa kembali nanti.",
+    "tags": {
+      "spiritual": "Spiritual",
+      "dialogue": "Dialog",
+      "social": "Sosial",
+      "educational": "Edukasi"
+    },
+    "programmes_label": "Program rutin",
+    "programmes_heading": "Program unggulan MSiS",
+    "prog1_title": "Pertemuan dialog",
+    "prog1_desc": "Percakapan terbuka tentang iman, identitas, dan masyarakat lintas latar belakang.",
+    "prog2_title": "Makan malam internasional",
+    "prog2_desc": "Malam penuh makanan, budaya, dan kebersamaan dari seluruh dunia.",
+    "prog3_title": "Salat Jumat",
+    "prog3_desc": "Salat Jumat mingguan dengan khutbah di musala kampus.",
+    "prog4_title": "Lokakarya keterampilan belajar",
+    "prog4_desc": "Alat praktis untuk sukses dalam studi dan menyeimbangkan hidup."
+  },
+  "membership": {
+    "label": "Jadi bagian dari kami",
+    "heading": "Setiap mahasiswa Muslim di universitas punya tempat di sini",
+    "sub": "Gratis · Terbuka · Dipimpin mahasiswa",
+    "form_name": "Nama lengkap",
+    "form_email": "Email",
+    "form_nationality": "Kewarganegaraan (opsional)",
+    "form_message": "Mengapa kamu bergabung? (opsional)",
+    "form_submit": "Gabung MSiS — gratis",
+    "success_welcome": "Selamat datang di MSiS!",
+    "success_text": "Terima kasih telah bergabung. Kami akan menghubungimu dengan pemberitahuan acara segera.",
+    "quote": "“Sesungguhnya orang-orang beriman itu bersaudara.” — Al-Qur'an 49:10",
+    "quote_arabic": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ",
+    "benefit_1_title": "Pemberitahuan acara",
+    "benefit_1_desc": "Dapatkan kabar tentang semua acara MSiS",
+    "benefit_2_title": "Hak suara",
+    "benefit_2_desc": "Memilih dalam rapat umum",
+    "benefit_3_title": "Jadi pengurus",
+    "benefit_3_desc": "Berkontribusi langsung pada kerja MSiS"
+  },
+  "about": {
+    "story_label": "Kisah kami",
+    "story_heading": "Rumah kampus bagi mahasiswa Muslim",
+    "story_text": "MSiS bermula sebagai inisiatif mahasiswa untuk memberi mahasiswa Muslim di universitas lingkungan yang mendukung. Kini kami bekerja untuk kehidupan mahasiswa yang berlandaskan iman melalui program, advokasi, dan kolaborasi.",
+    "glance_heading": "Inklusif, dipimpin mahasiswa, berorientasi masa depan",
+    "glance_text": "Kami organisasi nirlaba dan independen secara politik. Semua yang kami lakukan dikelola oleh anggota dan berakar pada nilai inti Islam: kasih sayang, ilmu, dan kepedulian komunitas.",
+    "founded": "Didirikan",
+    "affiliations": "Berkolaborasi dengan",
+    "focus": "Fokus",
+    "focus_value": "Inklusif · Dipimpin mahasiswa · Berorientasi masa depan",
+    "purpose_heading": "Tujuan dan prinsip",
+    "purpose_text": "Tujuan kami mendukung mahasiswa Muslim secara spiritual, akademik, dan sosial — serta membangun jembatan pemahaman di seluruh komunitas mahasiswa.",
+    "constitution_heading": "Anggaran dasar sekilas",
+    "constitution_mission_title": "Misi",
+    "constitution_mission": "Memajukan persatuan, pembelajaran, dan dialog di antara mahasiswa Muslim di universitas.",
+    "constitution_membership_title": "Keanggotaan",
+    "constitution_membership": "Terbuka dan gratis bagi semua mahasiswa yang berbagi nilai kami.",
+    "constitution_governance_title": "Tata kelola",
+    "constitution_governance": "Dipimpin secara demokratis oleh pengurus terpilih dan rapat umum tahunan.",
+    "collab_heading": "Pendekatan kolaboratif",
+    "collab_text": "Kami bekerja erat dengan universitas, SiS, dan StOr agar suara mahasiswa Muslim didengar dalam keputusan yang membentuk kehidupan kampus.",
+    "board_label": "Pengurus 2024–2025",
+    "board_heading": "Kenali orang-orang di balik MSiS"
+  },
+  "contact": {
+    "label": "Hubungi MSiS",
+    "heading": "Kami senang mendengar dari Anda",
+    "sub": "Hubungi kami dengan pertanyaan, ide kolaborasi, atau untuk mengatur pertemuan dengan pengurus.",
+    "location_heading": "Temukan kami di universitas",
+    "location_text": "Pertemuan MSiS biasanya berlangsung di musala Kjølv Egeland dan Pusat Mahasiswa SiS (ruang Ø-110)."
+  },
+  "prayer": {
+    "label": "Ibadah harian · Pusat Mahasiswa SiS ruang Ø-110",
+    "heading": "Waktu salat untuk Stavanger",
+    "sub": "Tetap selaras dengan lima salat harian saat di kampus.",
+    "fajr": "Subuh",
+    "sunrise": "Terbit",
+    "dhuhr": "Zuhur",
+    "asr": "Asar",
+    "maghrib": "Magrib",
+    "isha": "Isya",
+    "powered_by": "Perhitungan dan pembaruan oleh",
+    "reminders_heading": "Pengingat kampus",
+    "hijri_label": "Tanggal Hijriah",
+    "gregorian_label": "Tanggal Masehi",
+    "countdown_label": "Salat berikutnya dalam",
+    "now": "Sekarang",
+    "tips_heading": "Tips bermanfaat",
+    "tips_method": "Waktu dihitung dengan metode Liga Dunia Muslim untuk Stavanger.",
+    "tips_wudu": "Ingat wudu sebelum salat — fasilitas tersedia di dekat musala.",
+    "reminders_friday": "Salat Jumat diumumkan setiap minggu melalui Instagram dan email.",
+    "reminders_spaces": "Musala di gedung Kjølv Egeland dan ruang Ø-110 terbuka untuk semua mahasiswa."
+  },
+  "ramadan": {
+    "label": "Bulan yang diberkahi",
+    "heading": "Ramadan bersama MSiS",
+    "sub": "Program iftar, refleksi, dan kebersamaan sepanjang bulan suci.",
+    "countdown_until": "hari menuju Ramadan",
+    "countdown_into": "hari memasuki Ramadan",
+    "countdown_over": "Ramadan telah berakhir — sampai jumpa tahun depan, insya Allah.",
+    "iftar_heading": "Rangkaian iftar",
+    "iftar_text": "Ikuti empat iftar bersama sepanjang bulan — berbagi makanan, salat, dan percakapan.",
+    "reflection_heading": "Refleksi bersama",
+    "reflection_text": "Pertemuan mingguan untuk refleksi, membaca Al-Qur'an, dan penyegaran spiritual bersama."
+  },
+  "cta_band": {
+    "heading": "Setiap mahasiswa Muslim di universitas punya tempat di sini",
+    "button": "Jadi anggota"
+  },
+  "footer": {
+    "tagline": "MSiS memajukan persatuan, pembelajaran, dan dialog di antara mahasiswa Muslim di universitas.",
+    "connect": "Ikuti kami",
+    "links": "Tautan cepat",
+    "improve_translation": "Bantu kami memperbaiki terjemahan ini"
+  },
+  "404": {
+    "heading": "Halaman tidak ditemukan",
+    "sub": "Halaman ini tidak ada — tetapi komunitasmu ada.",
+    "back": "Kembali ke beranda",
+    "prayer_link": "Ke waktu salat"
+  },
+  "language_banner": {
+    "text": "Tersedia dalam 11 bahasa — pilih bahasamu",
+    "improve": "Bantu kami memperbaiki terjemahan",
+    "ai_notice": "Terjemahan ini dibuat oleh AI. Jika Anda menemukan kesalahan, "
+  },
+  "toast": {
+    "begins_in": "dimulai dalam",
+    "minutes": "menit",
+    "room": "ruang Ø-110"
+  }
+}

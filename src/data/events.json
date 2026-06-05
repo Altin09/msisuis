@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "title_no": "Fredagsbønn — Juma",
+    "title_en": "Friday Prayer — Juma",
+    "date": "2025-06-13",
+    "time": "13:00",
+    "location": "Kjøita 25, Ø-110",
+    "category": "spiritual",
+    "description_no": "Ukentlig fredagsbønn med khutbah. Alle er velkomne.",
+    "description_en": "Weekly Friday prayer with khutbah. Everyone welcome.",
+    "recurring": true
+  },
+  {
+    "id": "2",
+    "title_no": "Dialogkveld: Islam og identitet",
+    "title_en": "Dialogue Evening: Islam and Identity",
+    "date": "2025-06-22",
+    "time": "17:30",
+    "location": "UiS bibliotek",
+    "category": "dialogue",
+    "description_no": "En åpen samtale om tro, identitet og tilhørighet på campus.",
+    "description_en": "An open conversation about faith, identity and belonging on campus."
+  },
+  {
+    "id": "3",
+    "title_no": "Internasjonal middag og kulturkveld",
+    "title_en": "International Dinner & Culture Night",
+    "date": "2025-08-20",
+    "time": "18:00",
+    "location": "SiS Studentsenter",
+    "category": "social",
+    "description_no": "Smak retter fra hele verden og bli kjent med nye studievenner.",
+    "description_en": "Taste dishes from around the world and meet new study friends."
+  },
+  {
+    "id": "4",
+    "title_no": "Studiegruppe: Arabisk for nybegynnere",
+    "title_en": "Study Group: Arabic for Beginners",
+    "date": "2025-09-05",
+    "time": "16:00",
+    "location": "Kjølv Egelands hus, rom KE E-401",
+    "category": "educational",
+    "description_no": "Lær det arabiske alfabetet og grunnleggende uttale — ingen forkunnskap kreves.",
+    "description_en": "Learn the Arabic alphabet and basic pronunciation — no prior knowledge needed."
+  },
+  {
+    "id": "5",
+    "title_no": "Foredrag: Tro og psykisk helse",
+    "title_en": "Talk: Faith and Mental Health",
+    "date": "2025-09-19",
+    "time": "17:00",
+    "location": "UiS, auditorium A-1",
+    "category": "educational",
+    "description_no": "En psykolog og en imam i samtale om balanse, mestring og åndelig ro.",
+    "description_en": "A psychologist and an imam in conversation on balance, coping and spiritual calm."
+  },
+  {
+    "id": "6",
+    "title_no": "Sommeravslutning og grillkveld",
+    "title_en": "Summer Wrap-up & BBQ Night",
+    "date": "2025-06-28",
+    "time": "16:00",
+    "location": "Vaulen badeplass",
+    "category": "social",
+    "description_no": "Vi avslutter semesteret med mat, lek og fellesskap ved sjøen.",
+    "description_en": "We close the semester with food, games and community by the sea."
+  },
+  {
+    "id": "7",
+    "title_no": "Velkomstuke: Bli kjent med MSiS",
+    "title_en": "Welcome Week: Meet MSiS",
+    "date": "2025-08-25",
+    "time": "12:00",
+    "location": "Arne Rettedals hus, foajé",
+    "category": "social",
+    "description_no": "Stand under fadderuka — møt styret og meld deg inn gratis.",
+    "description_en": "A stand during orientation week — meet the board and join for free."
+  },
+  {
+    "id": "8",
+    "title_no": "Dialogmøte med Det Norske Studentersamfund",
+    "title_en": "Dialogue Meeting with the Student Society",
+    "date": "2025-11-07",
+    "time": "18:00",
+    "location": "Folken, Stavanger",
+    "category": "dialogue",
+    "description_no": "Tverrkulturell dialog om fellesskap, mangfold og studentliv.",
+    "description_en": "Cross-cultural dialogue on community, diversity and student life."
+  },
+  {
+    "id": "9",
+    "title_no": "Studieteknikk-workshop",
+    "title_en": "Study Skills Workshop",
+    "date": "2025-10-03",
+    "time": "14:00",
+    "location": "SiS Studentsenter, rom Ø-110",
+    "category": "educational",
+    "description_no": "Praktiske verktøy for planlegging, notater og eksamensforberedelse.",
+    "description_en": "Practical tools for planning, note-taking and exam preparation."
+  }
+]

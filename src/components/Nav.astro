@@ -1,0 +1,181 @@
+---
+import { localizePath } from '../i18n/config';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
+interface Props {
+  lang: string;
+  t: Record<string, any>;
+}
+const { lang, t } = Astro.props;
+
+const path = Astro.url.pathname.replace(/\/$/, '');
+const links = [
+  { href: localizePath(lang), key: 'home', exact: true },
+  { href: localizePath(lang, 'about'), key: 'about' },
+  { href: localizePath(lang, 'events'), key: 'events' },
+  { href: localizePath(lang, 'membership'), key: 'membership' },
+  { href: localizePath(lang, 'prayer'), key: 'prayer' },
+  { href: localizePath(lang, 'contact'), key: 'contact' },
+];
+
+const isActive = (href: string, exact?: boolean) =>
+  exact ? path === href.replace(/\/$/, '') : path.startsWith(href.replace(/\/$/, ''));
+---
+
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href={localizePath(lang)}>
+      <img
+        src="/assets/msis-logo-transp-256.png"
+        alt="MSiS logo"
+        width="36"
+        height="36"
+        loading="eager"
+      />
+      <span>MSiS</span>
+    </a>
+
+    <details class="nav-mobile">
+      <summary aria-label="Menu">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </summary>
+      <nav class="nav-links" aria-label="Primary">
+        {
+          links.map((l) => (
+            <a
+              href={l.href}
+              aria-current={isActive(l.href, l.exact) ? 'page' : undefined}
+              class={isActive(l.href, l.exact) ? 'is-active' : ''}
+            >
+              {t.nav[l.key]}
+            </a>
+          ))
+        }
+      </nav>
+    </details>
+
+    <div class="nav-end">
+      <LanguageSwitcher lang={lang} />
+      <a class="btn btn-primary nav-cta" href={localizePath(lang, 'membership')}>
+        {t.nav.cta}
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: var(--nav-bg);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    min-height: 64px;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: -0.02em;
+  }
+  .brand img {
+    border-radius: 8px;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+  }
+  .nav-links a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    padding: 0.3rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .nav-links a:hover,
+  .nav-links a.is-active {
+    color: var(--color-primary-mid);
+    border-color: var(--color-primary-mid);
+  }
+  .nav-end {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-inline-start: auto;
+  }
+  /* Desktop: links centred, mobile toggle hidden */
+  .nav-mobile > summary {
+    display: none;
+  }
+  @media (min-width: 880px) {
+    .nav-mobile {
+      margin-inline: auto;
+    }
+    .nav-mobile[open] .nav-links,
+    .nav-mobile .nav-links {
+      position: static;
+      flex-direction: row;
+      box-shadow: none;
+      background: transparent;
+      padding: 0;
+      border: 0;
+    }
+  }
+  /* Mobile */
+  @media (max-width: 879px) {
+    .nav-end .nav-cta {
+      display: none;
+    }
+    .nav-mobile > summary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      list-style: none;
+      padding: 0.4rem;
+      border-radius: var(--radius-sm);
+      margin-inline-start: auto;
+      order: 3;
+    }
+    .nav-mobile > summary::-webkit-details-marker {
+      display: none;
+    }
+    .nav-mobile {
+      position: static;
+    }
+    .nav-links {
+      position: absolute;
+      inset-inline: 0;
+      top: 64px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      background: var(--color-white);
+      border-bottom: 1px solid var(--color-border);
+      padding: var(--space-sm) var(--space-lg);
+      box-shadow: var(--shadow-md);
+    }
+    .nav-links a {
+      width: 100%;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .nav-end {
+      order: 2;
+    }
+  }
+</style>
