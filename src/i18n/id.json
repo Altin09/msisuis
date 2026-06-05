@@ -43,7 +43,7 @@
     "stat_partners": "Mitra"
   },
   "prayer_widget": {
-    "title": "Waktu salat — hari ini",
+    "title": "Waktu salat",
     "next": "Berikutnya"
   },
   "calligraphy": {
@@ -163,10 +163,13 @@
     "countdown_label": "Salat berikutnya dalam",
     "now": "Sekarang",
     "tips_heading": "Tips bermanfaat",
-    "tips_method": "Waktu dihitung dengan metode Liga Dunia Muslim untuk Stavanger.",
+    "tips_method": "Waktu bersumber dari Mawaqeet Norge, dihitung untuk Stavanger.",
     "tips_wudu": "Ingat wudu sebelum salat — fasilitas tersedia di dekat musala.",
     "reminders_friday": "Salat Jumat diumumkan setiap minggu melalui Instagram dan email.",
-    "reminders_spaces": "Musala di gedung Kjølv Egeland dan ruang Ø-110 terbuka untuk semua mahasiswa."
+    "reminders_spaces": "Musala di gedung Kjølv Egeland dan ruang Ø-110 terbuka untuk semua mahasiswa.",
+    "extreme_isha": "Selama periode ekstrem, Isya berbagi waktu dengan Magrib hingga Subuh. Waktu antara matahari terbenam dan Subuh dibagi dua: bagian pertama untuk Magrib dan kedua untuk Isya. Jika Isya sangat larut dan sulit ditunggu, Isya boleh dikerjakan dengan jeda yang sesuai setelah Magrib.",
+    "source": "Mawaqeet Norge",
+    "location": "Stavanger"
   },
   "ramadan": {
     "label": "Bulan yang diberkahi",

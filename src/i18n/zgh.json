@@ -43,7 +43,7 @@
     "stat_partners": "Imdukal"
   },
   "prayer_widget": {
-    "title": "Lewqat n teẓallit — ass-a",
+    "title": "Lewqat n teẓallit",
     "next": "Win i d-iteddun"
   },
   "calligraphy": {
@@ -163,10 +163,13 @@
     "countdown_label": "Taẓallit i d-iteddun deg",
     "now": "Tura",
     "tips_heading": "Iwellihen infaɛen",
-    "tips_method": "Lewqat ttwasiḍnen s tarrayt n Muslim World League i Stavanger.",
+    "tips_method": "Lewqat ttwaddmen-d seg Mawaqeet Norge, ttwasiḍnen i Stavanger.",
     "tips_wudu": "Mmekti-d luḍu uqbel teẓallit — llan yimukan ɣer tama n uxxam n teẓallit.",
     "reminders_friday": "Taẓallit n Jjemɛa tettwaberreḥ yal dduṛt s Instagram d yimayl.",
-    "reminders_spaces": "Axxam n teẓallit deg uxxam Kjølv Egeland d texxamt Ø-110 ldin i akk inelmaden."
+    "reminders_spaces": "Axxam n teẓallit deg uxxam Kjølv Egeland d texxamt Ø-110 ldin i akk inelmaden.",
+    "extreme_isha": "Deg lawan ameqran, Lɛica tbeṭṭu akud-is d Lmeɣreb alamma d Lfeǧr. Akud ger tuḍin n yiṭij d Lfeǧr yettwabḍa ɣef sin: aḥric amezwaru i Lmeɣreb, wis sin i Lɛica. Ma tella Lɛica teɛeṭṭel aṭas yerna yewɛer wraǧu, tzemreḍ ad tẓalleḍ Lɛica deffir Lmeɣreb s yiwen wakud munasib.",
+    "source": "Mawaqeet Norge",
+    "location": "Stavanger"
   },
   "ramadan": {
     "label": "Ayyur ameṛbuḥ",

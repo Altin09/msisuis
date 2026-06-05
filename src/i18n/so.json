@@ -43,7 +43,7 @@
     "stat_partners": "La-hawlgalayaal"
   },
   "prayer_widget": {
-    "title": "Waqtiyada salaadda — maanta",
+    "title": "Waqtiyada salaadda",
     "next": "Xigta"
   },
   "calligraphy": {
@@ -163,10 +163,13 @@
     "countdown_label": "Salaadda xigta gudaheed",
     "now": "Hadda",
     "tips_heading": "Talooyin faa'iido leh",
-    "tips_method": "Waqtiyada waxaa lagu xisaabiyaa habka Muslim World League ee Stavanger.",
+    "tips_method": "Waqtiyada waxaa laga soo qaatay Mawaqeet Norge, oo loo xisaabiyay Stavanger.",
     "tips_wudu": "Xusuuso weyso ka hor salaadda — agagaarka qolka salaadda waxaa jira tas-hiilaad.",
     "reminders_friday": "Salaadda Jimcaha waxaa toddobaad kasta lagu ogeysiiyaa Instagram iyo iimayl.",
-    "reminders_spaces": "Qolka salaadda ee dhismaha Kjølv Egeland iyo qolka Ø-110 way u furan yihiin dhammaan ardayda."
+    "reminders_spaces": "Qolka salaadda ee dhismaha Kjølv Egeland iyo qolka Ø-110 way u furan yihiin dhammaan ardayda.",
+    "extreme_isha": "Inta lagu jiro xilliga xad-dhaafka ah, Cishe waxay wakhtiga la wadaagtaa Maqrib ilaa Fajr. Wakhtiga u dhexeeya qorrax-dhaca iyo Fajr waxaa loo qaybiyaa laba: qaybta hore waxaa la siiyaa Maqrib, tan labaadna Cishe. Haddii Cishe aad u daahdo oo sugitaanku adkaado, waxaad Cishe ku tukan kartaa muddo ku habboon ka dib Maqrib.",
+    "source": "Mawaqeet Norge",
+    "location": "Stavanger"
   },
   "ramadan": {
     "label": "Bisha barakaysan",

@@ -5,14 +5,14 @@ interface Props {
 }
 const { t, full = false } = Astro.props;
 
-// API key -> translation key. Sunrise only shown in full mode.
+// Data key -> translation label. Sunrise only shown in full mode.
 const rows = [
-  { api: 'Fajr', label: t.prayer.fajr, prayer: true },
-  { api: 'Sunrise', label: t.prayer.sunrise, prayer: false, fullOnly: true },
-  { api: 'Dhuhr', label: t.prayer.dhuhr, prayer: true },
-  { api: 'Asr', label: t.prayer.asr, prayer: true },
-  { api: 'Maghrib', label: t.prayer.maghrib, prayer: true },
-  { api: 'Isha', label: t.prayer.isha, prayer: true },
+  { key: 'fajr', label: t.prayer.fajr, prayer: true },
+  { key: 'sunrise', label: t.prayer.sunrise, prayer: false, fullOnly: true },
+  { key: 'dhuhr', label: t.prayer.dhuhr, prayer: true },
+  { key: 'asr', label: t.prayer.asr, prayer: true },
+  { key: 'maghrib', label: t.prayer.maghrib, prayer: true },
+  { key: 'isha', label: t.prayer.isha, prayer: true },
 ].filter((r) => (full ? true : !r.fullOnly));
 ---
 
@@ -23,9 +23,7 @@ const rows = [
 >
   <div class="pw-head">
     <p class="pw-title">{full ? t.prayer.heading : t.prayer_widget.title}</p>
-    <p class="pw-hijri" data-hijri>
-      <span class="skeleton skeleton-text"></span>
-    </p>
+    <p class="pw-date" data-date>—</p>
   </div>
 
   {
@@ -40,9 +38,9 @@ const rows = [
   <ul class="pw-list">
     {
       rows.map((r) => (
-        <li class="pw-row" data-prayer-row={r.prayer ? r.api : undefined}>
+        <li class="pw-row" data-prayer-row={r.prayer ? r.key : undefined}>
           <span class="pw-name">{r.label}</span>
-          <span class="pw-time" data-time={r.api}>
+          <span class="pw-time" data-time={r.key}>
             <span class="skeleton skeleton-time" />
           </span>
         </li>
@@ -50,9 +48,10 @@ const rows = [
     }
   </ul>
 
+  <p class="pw-extreme" data-extreme hidden>{t.prayer.extreme_isha}</p>
+
   <p class="pw-footer">
-    {t.prayer.powered_by}
-    <a href="https://aladhan.com" rel="noopener" target="_blank">Aladhan API</a>
+    {t.prayer.powered_by} <strong>{t.prayer.source}</strong> · {t.prayer.location}
   </p>
 </div>
 
@@ -75,21 +74,18 @@ const rows = [
     box-shadow: var(--shadow-md);
   }
   .pw-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: var(--space-sm);
     margin-bottom: var(--space-md);
   }
   .pw-title {
     font-weight: 600;
     font-size: 1rem;
+    line-height: 1.3;
   }
-  .pw-hijri {
-    font-size: 0.8rem;
+  .pw-date {
+    font-size: 0.85rem;
     opacity: 0.75;
-    min-width: 6ch;
-    text-align: end;
+    font-variant-numeric: tabular-nums;
+    margin-top: 2px;
   }
   .pw-countdown {
     display: flex;
@@ -170,16 +166,29 @@ const rows = [
     letter-spacing: 0.05em;
     margin-inline-start: var(--space-sm);
   }
+  .pw-extreme {
+    margin-top: var(--space-md);
+    font-size: 0.82rem;
+    line-height: 1.55;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    border-inline-start: 3px solid var(--color-accent);
+  }
+  .prayer-widget--card .pw-extreme {
+    background: rgba(245, 200, 66, 0.12);
+    color: #f3e6c0;
+  }
+  .prayer-widget--full .pw-extreme {
+    background: var(--color-primary-light);
+    color: var(--color-text-muted);
+  }
+  .pw-extreme[hidden] {
+    display: none;
+  }
   .pw-footer {
     margin-top: var(--space-md);
     font-size: 0.75rem;
     opacity: 0.7;
-  }
-  .pw-footer a {
-    text-decoration: underline;
-  }
-  .prayer-widget--full .pw-footer a {
-    color: var(--color-primary-mid);
   }
   /* Loading skeletons */
   .skeleton {
@@ -198,10 +207,6 @@ const rows = [
     width: 48px;
     height: 14px;
   }
-  .skeleton-text {
-    width: 70px;
-    height: 11px;
-  }
   @keyframes shimmer {
     0% {
       background-position: 100% 50%;
@@ -213,86 +218,116 @@ const rows = [
 </style>
 
 <script>
-  const PRAYER_ORDER = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
+  // Prayers in daily order (Sunrise excluded — it is not a prayer time).
+  const PRAYER_ORDER = ['fajr', 'dhuhr', 'asr', 'maghrib', 'isha'];
 
+  function pad(n: number): string {
+    return String(n).padStart(2, '0');
+  }
+  function mmdd(d: Date): string {
+    return `${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  }
+  function fmtDate(d: Date): string {
+    return `${pad(d.getDate())}.${pad(d.getMonth() + 1)}.${d.getFullYear()}`;
+  }
+  function toToday(hhmm: string): Date {
+    const [h, m] = hhmm.split(':').map(Number);
+    const d = new Date();
+    d.setHours(h, m, 0, 0);
+    return d;
+  }
   function fmtCountdown(ms: number): string {
     const total = Math.max(0, Math.floor(ms / 1000));
     const h = Math.floor(total / 3600);
     const m = Math.floor((total % 3600) / 60);
     const s = total % 60;
-    const pad = (n: number) => String(n).padStart(2, '0');
     return `${pad(h)}:${pad(m)}:${pad(s)}`;
   }
+
+  type DayTimes = Record<string, string | null>;
 
   async function initPrayerWidgets() {
     const widgets = document.querySelectorAll<HTMLElement>('[data-prayer]');
     if (!widgets.length) return;
 
-    let timings: Record<string, string> | null = null;
-    let hijri = '';
+    let table: Record<string, DayTimes>;
     try {
-      const res = await fetch(
-        'https://api.aladhan.com/v1/timingsByCity?city=Stavanger&country=Norway&method=3'
-      );
-      const data = await res.json();
-      timings = data.data.timings;
-      const hj = data.data.date.hijri;
-      hijri = `${hj.day} ${hj.month.en} ${hj.year} AH`;
-    } catch (e) {
+      const res = await fetch('/data/prayer-times.json');
+      table = await res.json();
+    } catch {
       widgets.forEach((w) => {
-        const h = w.querySelector('[data-hijri]');
-        if (h) h.textContent = '—';
+        const dd = w.querySelector('[data-date]');
+        if (dd) dd.textContent = '—';
       });
       return;
     }
 
-    // Build today's prayer datetimes for "next" detection.
     const now = new Date();
-    const dt: Record<string, Date> = {};
-    Object.entries(timings).forEach(([k, v]) => {
-      const [hh, mm] = (v as string).split(':').map(Number);
-      const d = new Date(now);
-      d.setHours(hh, mm, 0, 0);
-      dt[k] = d;
-    });
-    let nextName = PRAYER_ORDER.find((p) => dt[p] && dt[p] > now) ?? null;
-    let nextTime = nextName ? dt[nextName] : null;
-    // After Isha, next prayer is tomorrow's Fajr.
-    if (!nextName) {
-      nextName = 'Fajr';
-      const f = new Date(dt['Fajr']);
-      f.setDate(f.getDate() + 1);
-      nextTime = f;
+    const today = table[mmdd(now)];
+    if (!today) return;
+
+    // Determine next prayer (skip Isha when it has no time during extreme period).
+    let nextKey: string | null = null;
+    let nextTime: Date | null = null;
+    for (const k of PRAYER_ORDER) {
+      const v = today[k];
+      if (!v) continue;
+      const when = toToday(v);
+      if (when > now) {
+        nextKey = k;
+        nextTime = when;
+        break;
+      }
+    }
+    // Past all of today's prayers → tomorrow's Fajr.
+    if (!nextKey) {
+      const tmr = new Date(now);
+      tmr.setDate(tmr.getDate() + 1);
+      const tdata = table[mmdd(tmr)];
+      if (tdata?.fajr) {
+        nextKey = 'fajr';
+        const [h, m] = tdata.fajr.split(':').map(Number);
+        nextTime = new Date(tmr);
+        nextTime.setHours(h, m, 0, 0);
+      }
     }
 
+    const ishaMissing = !today.isha;
+
     widgets.forEach((w) => {
-      const hEl = w.querySelector('[data-hijri]');
-      if (hEl) hEl.textContent = hijri;
+      const dd = w.querySelector('[data-date]');
+      if (dd) dd.textContent = fmtDate(now);
 
       w.querySelectorAll<HTMLElement>('[data-time]').forEach((el) => {
         const key = el.dataset.time!;
-        el.textContent = timings![key] ?? '—';
+        el.textContent = today[key] ?? '--:--';
       });
 
-      // Highlight next prayer row + add badge.
-      const row = w.querySelector<HTMLElement>(`[data-prayer-row="${nextName}"]`);
-      if (row) {
-        row.classList.add('is-next');
-        const badge = document.createElement('span');
-        badge.className = 'pw-next-badge';
-        badge.textContent = w.dataset.nextLabel ?? 'Next';
-        row.querySelector('.pw-name')?.appendChild(badge);
+      // Highlight next prayer + badge.
+      if (nextKey) {
+        const row = w.querySelector<HTMLElement>(`[data-prayer-row="${nextKey}"]`);
+        if (row) {
+          row.classList.add('is-next');
+          const badge = document.createElement('span');
+          badge.className = 'pw-next-badge';
+          badge.textContent = w.dataset.nextLabel ?? 'Next';
+          row.querySelector('.pw-name')?.appendChild(badge);
+        }
       }
+
+      // Extreme-period Isha notice.
+      const ex = w.querySelector<HTMLElement>('[data-extreme]');
+      if (ex && ishaMissing) ex.hidden = false;
 
       // Countdown (full mode only).
       const cdVal = w.querySelector<HTMLElement>('[data-countdown-value]');
       if (cdVal && nextTime) {
+        const target = nextTime;
         const tick = () => {
-          cdVal.textContent = fmtCountdown(nextTime!.getTime() - Date.now());
+          cdVal.textContent = fmtCountdown(target.getTime() - Date.now());
         };
         tick();
         const id = window.setInterval(tick, 1000);
-        // Clear interval on navigation to avoid leaks.
         document.addEventListener('astro:before-swap', () => window.clearInterval(id), {
           once: true,
         });

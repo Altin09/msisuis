@@ -91,6 +91,7 @@ const aiNotice = lang === 'ce' || lang === 'zgh';
       data-begins={t.toast.begins_in}
       data-minutes={t.toast.minutes}
       data-room={t.toast.room}
+      data-names={`${t.prayer.fajr}|${t.prayer.dhuhr}|${t.prayer.asr}|${t.prayer.maghrib}|${t.prayer.isha}`}
       hidden
     >
       <span id="prayer-toast-text"></span>
@@ -132,8 +133,8 @@ const aiNotice = lang === 'ce' || lang === 'zgh';
         window.addEventListener('scroll', onScroll, { passive: true });
       };
 
-      // --- Next-prayer toast (within 15 min) ---
-      const PRAYER_ORDER = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
+      // --- Next-prayer toast (within 15 min), using Mawaqeet Norge data ---
+      const TOAST_ORDER = ['fajr', 'dhuhr', 'asr', 'maghrib', 'isha'];
       const setupToast = async () => {
         const toast = document.getElementById('prayer-toast');
         const text = document.getElementById('prayer-toast-text');
@@ -145,24 +146,26 @@ const aiNotice = lang === 'ce' || lang === 'zgh';
           sessionStorage.setItem('prayerToastDismissed', '1');
         });
         try {
-          const res = await fetch(
-            'https://api.aladhan.com/v1/timingsByCity?city=Stavanger&country=Norway&method=3'
-          );
-          const data = await res.json();
-          const timings = data.data.timings;
+          const res = await fetch('/data/prayer-times.json');
+          const table = await res.json();
           const now = new Date();
-          for (const name of PRAYER_ORDER) {
-            const [h, m] = timings[name].split(':').map(Number);
+          const pad = (n) => String(n).padStart(2, '0');
+          const today = table[`${pad(now.getMonth() + 1)}-${pad(now.getDate())}`];
+          if (!today) return;
+          const names = (toast.dataset.names || '').split('|');
+          TOAST_ORDER.forEach((key, i) => {
+            const v = today[key];
+            if (!v || !toast.hidden) return;
+            const [h, m] = v.split(':').map(Number);
             const when = new Date(now);
             when.setHours(h, m, 0, 0);
             const diffMin = (when.getTime() - now.getTime()) / 60000;
             if (diffMin > 0 && diffMin <= 15) {
               const tpl = toast.dataset;
-              text.textContent = `${name} ${tpl.begins} ${Math.round(diffMin)} ${tpl.minutes} — ${tpl.room}`;
+              text.textContent = `${names[i]} ${tpl.begins} ${Math.round(diffMin)} ${tpl.minutes} — ${tpl.room}`;
               toast.hidden = false;
-              break;
             }
-          }
+          });
         } catch (e) {
           /* network failure: silently skip */
         }

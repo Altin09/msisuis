@@ -43,7 +43,7 @@
     "stat_partners": "Partnerë"
   },
   "prayer_widget": {
-    "title": "Kohët e namazit — sot",
+    "title": "Kohët e namazit",
     "next": "I radhës"
   },
   "calligraphy": {
@@ -163,10 +163,13 @@
     "countdown_label": "Namazi i radhës për",
     "now": "Tani",
     "tips_heading": "Këshilla të dobishme",
-    "tips_method": "Kohët llogariten me metodën e Lidhjes Botërore Myslimane për Stavanger.",
+    "tips_method": "Kohët merren nga Mawaqeet Norge, të llogaritura për Stavanger.",
     "tips_wudu": "Mos harro abdesin para namazit — ka ambiente pranë dhomës së namazit.",
     "reminders_friday": "Namazi i xhumasë njoftohet çdo javë nëpërmjet Instagram dhe emailit.",
-    "reminders_spaces": "Dhoma e namazit në ndërtesën Kjølv Egeland dhe dhoma Ø-110 janë të hapura për të gjithë studentët."
+    "reminders_spaces": "Dhoma e namazit në ndërtesën Kjølv Egeland dhe dhoma Ø-110 janë të hapura për të gjithë studentët.",
+    "extreme_isha": "Gjatë periudhës ekstreme, Isha e ndan kohën me Akshamin deri në Sabah. Periudha mes perëndimit të diellit dhe Sabahut ndahet në dy pjesë: pjesa e parë i jepet Akshamit dhe e dyta Ishasë. Nëse Isha është shumë vonë dhe e vështirë për të pritur, mund ta falni Ishanë një interval të përshtatshëm pas Akshamit.",
+    "source": "Mawaqeet Norge",
+    "location": "Stavanger"
   },
   "ramadan": {
     "label": "Muaji i bekuar",

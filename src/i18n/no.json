@@ -43,7 +43,7 @@
     "stat_partners": "Samarbeidspartnere"
   },
   "prayer_widget": {
-    "title": "Bønnetider — i dag",
+    "title": "Bønnetider",
     "next": "Neste"
   },
   "calligraphy": {
@@ -163,10 +163,13 @@
     "countdown_label": "Neste bønn om",
     "now": "Nå",
     "tips_heading": "Nyttige tips",
-    "tips_method": "Tidene beregnes med Muslim World League-metoden for Stavanger.",
+    "tips_method": "Tidene er hentet fra Mawaqeet Norge, beregnet for Stavanger.",
     "tips_wudu": "Husk wudu før bønn — det finnes fasiliteter ved bønnerommet.",
     "reminders_friday": "Fredagsbønn (Juma) kunngjøres ukentlig via Instagram og e-post.",
-    "reminders_spaces": "Bønnerommet i Kjølv Egelands hus og rom Ø-110 er åpne for alle studenter."
+    "reminders_spaces": "Bønnerommet i Kjølv Egelands hus og rom Ø-110 er åpne for alle studenter.",
+    "extreme_isha": "Under ekstremperioden har Isha fellestid med Maghrib fram til Fajr. Man deler da perioden mellom solnedgang og Fajr i to, hvor den første delen gis til Maghrib og den andre til Isha. Hvis Isha er veldig sen og det er vanskelig å vente, kan man be Isha med et passende mellomrom etter Maghrib.",
+    "source": "Mawaqeet Norge",
+    "location": "Stavanger"
   },
   "ramadan": {
     "label": "Velsignet måned",

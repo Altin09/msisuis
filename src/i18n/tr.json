@@ -43,7 +43,7 @@
     "stat_partners": "Ortaklar"
   },
   "prayer_widget": {
-    "title": "Namaz vakitleri — bugün",
+    "title": "Namaz vakitleri",
     "next": "Sonraki"
   },
   "calligraphy": {
@@ -163,10 +163,13 @@
     "countdown_label": "Sonraki namaza",
     "now": "Şimdi",
     "tips_heading": "Faydalı ipuçları",
-    "tips_method": "Vakitler Stavanger için Müslüman Dünya Birliği yöntemiyle hesaplanır.",
+    "tips_method": "Vakitler Stavanger için hesaplanan Mawaqeet Norge'den alınmıştır.",
     "tips_wudu": "Namazdan önce abdesti unutmayın — mescidin yanında imkânlar mevcuttur.",
     "reminders_friday": "Cuma namazı (Cuma) her hafta Instagram ve e-posta ile duyurulur.",
-    "reminders_spaces": "Kjølv Egeland binasındaki mescit ve oda Ø-110 tüm öğrencilere açıktır."
+    "reminders_spaces": "Kjølv Egeland binasındaki mescit ve oda Ø-110 tüm öğrencilere açıktır.",
+    "extreme_isha": "Aşırı dönemde, yatsı namazı fecre kadar akşam ile vaktini paylaşır. Gün batımı ile fecir arasındaki süre ikiye bölünür: ilk bölüm akşama, ikincisi yatsıya verilir. Yatsı çok geç olur ve beklemek zorlaşırsa, yatsı akşamdan uygun bir süre sonra kılınabilir.",
+    "source": "Mawaqeet Norge",
+    "location": "Stavanger"
   },
   "ramadan": {
     "label": "Mübarek ay",

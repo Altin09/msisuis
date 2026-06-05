@@ -43,7 +43,7 @@
     "stat_partners": "Partners"
   },
   "prayer_widget": {
-    "title": "Prayer times — today",
+    "title": "Prayer times",
     "next": "Next"
   },
   "calligraphy": {
@@ -163,10 +163,13 @@
     "countdown_label": "Next prayer in",
     "now": "Now",
     "tips_heading": "Helpful tips",
-    "tips_method": "Times are calculated using the Muslim World League method for Stavanger.",
+    "tips_method": "Times are sourced from Mawaqeet Norge, calculated for Stavanger.",
     "tips_wudu": "Remember wudu before prayer — facilities are available by the prayer room.",
     "reminders_friday": "Friday prayer (Juma) is announced weekly via Instagram and email.",
-    "reminders_spaces": "The prayer room in Kjølv Egeland's building and room Ø-110 are open to all students."
+    "reminders_spaces": "The prayer room in Kjølv Egeland's building and room Ø-110 are open to all students.",
+    "extreme_isha": "During the extreme period, Isha shares its time with Maghrib until Fajr. The period between sunset and Fajr is divided in two: the first part is given to Maghrib and the second to Isha. If Isha is very late and hard to wait for, you may pray Isha a suitable interval after Maghrib.",
+    "source": "Mawaqeet Norge",
+    "location": "Stavanger"
   },
   "ramadan": {
     "label": "Blessed month",
