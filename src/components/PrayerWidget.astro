@@ -23,7 +23,10 @@ const rows = [
 >
   <div class="pw-head">
     <p class="pw-title">{full ? t.prayer.heading : t.prayer_widget.title}</p>
-    <p class="pw-date" data-date>—</p>
+    <p class="pw-dates">
+      <span class="pw-hijri" data-hijri>—</span>
+      <span class="pw-date" data-date></span>
+    </p>
   </div>
 
   {
@@ -81,11 +84,26 @@ const rows = [
     font-size: 1rem;
     line-height: 1.3;
   }
-  .pw-date {
+  .pw-dates {
     font-size: 0.85rem;
-    opacity: 0.75;
-    font-variant-numeric: tabular-nums;
     margin-top: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.4em;
+  }
+  .pw-hijri {
+    opacity: 0.9;
+    font-weight: 500;
+  }
+  .pw-date {
+    opacity: 0.65;
+    font-variant-numeric: tabular-nums;
+  }
+  .pw-date:not(:empty)::before {
+    content: '·';
+    margin-inline-end: 0.4em;
+    opacity: 0.6;
   }
   .pw-countdown {
     display: flex;
@@ -230,6 +248,17 @@ const rows = [
   function fmtDate(d: Date): string {
     return `${pad(d.getDate())}.${pad(d.getMonth() + 1)}.${d.getFullYear()}`;
   }
+  // Islamic (Umm al-Qura) date from the system clock — no API needed.
+  function fmtHijri(d: Date): string {
+    const pageLang = document.documentElement.lang || 'en';
+    const loc = pageLang === 'en' ? 'en-GB' : pageLang; // en-GB = day-first
+    const opts: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'long', year: 'numeric' };
+    try {
+      return new Intl.DateTimeFormat(`${loc}-u-ca-islamic-umalqura`, opts).format(d);
+    } catch {
+      return new Intl.DateTimeFormat('en-GB-u-ca-islamic-umalqura', opts).format(d);
+    }
+  }
   function toToday(hhmm: string): Date {
     const [h, m] = hhmm.split(':').map(Number);
     const d = new Date();
@@ -297,6 +326,8 @@ const rows = [
     widgets.forEach((w) => {
       const dd = w.querySelector('[data-date]');
       if (dd) dd.textContent = fmtDate(now);
+      const hj = w.querySelector('[data-hijri]');
+      if (hj) hj.textContent = fmtHijri(now);
 
       w.querySelectorAll<HTMLElement>('[data-time]').forEach((el) => {
         const key = el.dataset.time!;
