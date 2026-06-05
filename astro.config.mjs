@@ -5,6 +5,11 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://msisuis.no',
   output: 'static',
+  // Instant root redirect to the default locale (emits content="0",
+  // no visible body) — replaces Astro's slower 2s i18n auto-redirect.
+  redirects: {
+    '/': '/no/',
+  },
   integrations: [sitemap()],
   i18n: {
     defaultLocale: 'no',
