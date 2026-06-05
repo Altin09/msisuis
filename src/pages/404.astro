@@ -8,7 +8,7 @@ const lang = defaultLocale;
 const t = getTranslations(lang);
 ---
 
-<BaseLayout title={t.meta.notfound_title} description={t['404'].sub} lang={lang}>
+<BaseLayout title={t.meta.notfound_title} description={t['404'].sub} lang={lang} showHadith={false}>
   <section class="notfound">
     <GeometricPattern opacity={0.05} color="var(--color-primary)" />
     <div class="container notfound-inner">

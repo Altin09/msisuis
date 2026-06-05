@@ -1,0 +1,96 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+const { t } = Astro.props;
+
+const hadiths: { text: string; source: string }[] = t.hadiths ?? [];
+// SSR fallback: render the first hadith so the banner is never empty and
+// works without JavaScript. The client script swaps in the session's choice.
+const first = hadiths[0];
+---
+
+{
+  hadiths.length > 0 && (
+    <div
+      class="hadith-banner"
+      role="note"
+      aria-label="Daily hadith"
+      data-hadiths={JSON.stringify(hadiths)}
+    >
+      <p class="hadith-line">
+        <span class="hadith-accent">— </span>
+        <span class="hadith-text" data-hadith-text>&ldquo;{first.text}&rdquo;</span>
+        <span class="hadith-accent" data-hadith-source> ({first.source})</span>
+      </p>
+    </div>
+  )
+}
+
+<style>
+  .hadith-banner {
+    min-height: 44px;
+    background: #0d3d2a;
+    color: rgba(255, 255, 255, 0.72);
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-inline: var(--space-md);
+  }
+  .hadith-line {
+    white-space: nowrap;
+    margin: 0;
+  }
+  .hadith-accent {
+    color: #f5c842;
+  }
+  .hadith-text {
+    color: inherit;
+  }
+  /* Allow wrapping on small screens, with vertical padding. */
+  @media (max-width: 600px) {
+    .hadith-banner {
+      padding-block: 8px;
+    }
+    .hadith-line {
+      white-space: normal;
+    }
+  }
+</style>
+
+<script>
+  function initHadithBanner() {
+    const banner = document.querySelector<HTMLElement>('.hadith-banner[data-hadiths]');
+    if (!banner) return;
+
+    let list: { text: string; source: string }[];
+    try {
+      list = JSON.parse(banner.dataset.hadiths || '[]');
+    } catch {
+      return;
+    }
+    if (!list.length) return;
+
+    // Same hadith for the whole visit; new one on the next visit.
+    let stored = sessionStorage.getItem('hadithIndex');
+    if (stored === null) {
+      const idx = Math.floor(Math.random() * 20);
+      sessionStorage.setItem('hadithIndex', String(idx));
+      stored = String(idx);
+    }
+    const index = parseInt(stored, 10) % list.length;
+    const h = list[index];
+    if (!h) return;
+
+    const textEl = banner.querySelector<HTMLElement>('[data-hadith-text]');
+    const sourceEl = banner.querySelector<HTMLElement>('[data-hadith-source]');
+    if (textEl) textEl.textContent = `“${h.text}”`;
+    if (sourceEl) sourceEl.textContent = ` (${h.source})`;
+  }
+
+  document.addEventListener('astro:page-load', initHadithBanner);
+</script>

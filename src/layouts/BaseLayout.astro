@@ -4,15 +4,17 @@ import { ClientRouter } from 'astro:transitions';
 import { isRTL, getTranslations } from '../i18n/config';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import HadithBanner from '../components/HadithBanner.astro';
 
 interface Props {
   title: string;
   description: string;
   lang: string;
   ogImage?: string;
+  showHadith?: boolean;
 }
 
-const { title, description, lang, ogImage = '/assets/msis-logo-transp-512.png' } = Astro.props;
+const { title, description, lang, ogImage = '/assets/msis-logo-transp-512.png', showHadith = true } = Astro.props;
 const t = getTranslations(lang);
 const rtl = isRTL(lang);
 const dir = rtl ? 'rtl' : 'ltr';
@@ -75,6 +77,8 @@ const aiNotice = lang === 'ce' || lang === 'zgh';
     }
 
     <Nav lang={lang} t={t} />
+
+    {showHadith && <HadithBanner t={t} />}
 
     <main id="main">
       <slot />

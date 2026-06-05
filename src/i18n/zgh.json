@@ -208,5 +208,87 @@
     "begins_in": "ad yebdu deg",
     "minutes": "tisdatin",
     "room": "taxxamt Ø-110"
-  }
+  },
+  "hadiths": [
+    {
+      "text": "Win akken yifen deg-wen d wid yelemden Lquran u sɛelmen-t i wiyaḍ.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Ula d yiwen seg-wen ur yumin s tidet alamma yebɣa i gma-s ayen yebɣa i yiman-is.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Sshelt ur sɛiqet ara; awit lexbar ameṛuḥ ur ssebɛadet ara medden.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Ameslem d win i ɣef ttaɣen imeslmen nniḍen seg yiles-is d ufus-is.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Win iǧehden d win i izemren i yiman-is mi yerfa.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Talwit ur telli deg kra siwa ad as-ternu ccbaḥa.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Igiten i gɛezzen ɣer Ṛebbi d wid idumen, ɣas ad ilin d imecṭuḥen.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Ɛeyyec win yelluẓen, ɛiwed amuḍin, u serreḥ ameḥbus.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Win ur nḥennu ara ɣef medden, ur t-ḥennun ara.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Win yumnen s Ṛebbi d wass aneggaru, ad yini ayen yelhan neɣ ad yessusem.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Afus ufella yif afus wadda — ufella yettak, wadda yeṭṭef.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Ur ḥqir ara kra n lxir, ɣas d timlilit n gma-k s wudem yefraḥen.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Yal tawuri i wiyaḍ d ssadaqa.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Ṛebbi ur yettmuqul ara ɣer ṣṣifa-nwen d wayla-nwen, maca ɣer wulawen-nwen d yigiten-nwen.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Win iddan deg ubrid i unadi n tmusni, Ṛebbi ad as-yessishel abrid ɣer Lǧennet.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Wid yumnen deg leḥmala-nsen am yiwen n lǧetta — mi yeɛya yiwen n lmefṣel, tjawb-it akk lǧetta.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Ddin d aweṣṣi uṣil — i Ṛebbi, i Wedlis-is, i Umceggeɛ-is, d imeslmen.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Ṭṭfet di tidet, axaṭer tidet tessufuɣ ɣer lxir, lxir yessufuɣ ɣer Lǧennet.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Ddunit d lḥebs i umumen d lǧennet i ujeḥḥud.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Nadit tamusni, axaṭer unadi-ines d taɛbadt, leqraya-ines d asbeḥ, ameslay fell-as d ljihad.",
+      "source": "Attributed tradition"
+    }
+  ]
 }

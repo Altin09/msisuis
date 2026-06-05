@@ -208,5 +208,87 @@
     "begins_in": "başlıyor:",
     "minutes": "dakika",
     "room": "oda Ø-110"
-  }
+  },
+  "hadiths": [
+    {
+      "text": "Sizin en hayırlınız Kur'an'ı öğrenen ve onu başkalarına öğretendir.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Hiçbiriniz kendisi için istediğini kardeşi için istemedikçe gerçekten iman etmiş olmaz.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Kolaylaştırın, zorlaştırmayın; müjdeleyin, nefret ettirmeyin.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Müslüman, diğer Müslümanların dilinden ve elinden emin olduğu kimsedir.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Güçlü kişi, öfkelendiğinde kendine hâkim olandır.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Yumuşaklık bulunduğu her şeyi güzelleştirir.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Allah'a en sevimli ameller, az da olsa en sürekli olanlardır.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Açı doyurun, hastayı ziyaret edin ve esiri serbest bırakın.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "İnsanlara merhamet etmeyene merhamet edilmez.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Allah'a ve ahiret gününe iman eden ya hayır söylesin ya da sussun.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Veren el alan elden hayırlıdır — üst el verir, alt el alır.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Hiçbir iyiliği küçümseme, kardeşini güler yüzle karşılaman olsa bile.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Başkasına yapılan her hizmet bir sadakadır.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Allah sizin görünüşünüze ve malınıza değil, kalplerinize ve amellerinize bakar.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Kim ilim aramak için bir yola girerse, Allah ona cennetin yolunu kolaylaştırır.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Müminler birbirlerine merhametlerinde tek bir beden gibidir — bir uzuv acı çekince bütün beden buna ortak olur.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Din samimi öğüttür — Allah'a, kitabına, peygamberine ve Müslümanlara.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Doğruluğa sarılın, çünkü doğruluk iyiliğe, iyilik de cennete götürür.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Dünya müminin zindanı, kâfirin cennetidir.",
+      "source": "Muslim"
+    },
+    {
+      "text": "İlim arayın; çünkü onu aramak ibadet, onu öğrenmek tesbih, onu müzakere etmek cihaddır.",
+      "source": "Attributed tradition"
+    }
+  ]
 }

@@ -208,5 +208,87 @@
     "begins_in": "fillon për",
     "minutes": "minuta",
     "room": "dhoma Ø-110"
-  }
+  },
+  "hadiths": [
+    {
+      "text": "Më të mirët prej jush janë ata që mësojnë Kuranin dhe ua mësojnë të tjerëve.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Asnjëri prej jush nuk beson me të vërtetë derisa të dojë për vëllanë e tij atë që do për veten.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Lehtësoni dhe mos vështirësoni, jepni lajme të gëzueshme dhe mos i largoni njerëzit.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Musliman është ai nga gjuha dhe dora e të cilit janë të sigurt muslimanët e tjerë.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "I forti është ai që e përmban veten kur zemërohet.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Butësia nuk gjendet në asgjë veçse ia shton bukurinë.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Veprat më të dashura te Allahu janë ato më të vazhdueshmet, edhe nëse janë të vogla.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Ushqeni të uriturin, vizitoni të sëmurin dhe lironi robin.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Kush nuk u tregon mëshirë të tjerëve, nuk do t'i tregohet mëshirë.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Kush beson në Allahun dhe Ditën e Fundit, le të flasë mirë ose të heshtë.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Dora e sipërme është më e mirë se e poshtmja — e sipërmja jep, e poshtmja merr.",
+      "source": "Bukhari"
+    },
+    {
+      "text": "Mos e nënvlerëso asnjë vepër të mirë, qoftë edhe ta takosh vëllanë me fytyrë të gëzuar.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Çdo vepër e mirë në shërbim të tjetrit është lëmoshë.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Allahu nuk shikon pamjen apo pasurinë tuaj, por zemrat dhe veprat tuaja.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Kush ndjek një rrugë për të kërkuar dije, Allahu ia lehtëson rrugën drejt Xhenetit.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Besimtarët në dashamirësinë e tyre janë si një trup — kur një gjymtyrë vuan, i tërë trupi përgjigjet.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Feja është këshillë e sinqertë — për Allahun, Librin e Tij, të Dërguarin e Tij dhe muslimanët.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Mbahuni pas së vërtetës, sepse ajo të çon te mirësia, dhe mirësia të çon në Xhenet.",
+      "source": "Bukhari & Muslim"
+    },
+    {
+      "text": "Dynjaja është burg për besimtarin dhe parajsë për mohuesin.",
+      "source": "Muslim"
+    },
+    {
+      "text": "Kërkoni dijen, sepse kërkimi i saj është adhurim, studimi i saj është lavdërim i Allahut, dhe diskutimi i saj është xhihad.",
+      "source": "Attributed tradition"
+    }
+  ]
 }
