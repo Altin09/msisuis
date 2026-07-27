@@ -5,6 +5,7 @@ import { isRTL, getTranslations } from '../i18n/config';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import HadithBanner from '../components/HadithBanner.astro';
+import Analytics from '@vercel/analytics/astro';
 
 interface Props {
   title: string;
@@ -85,6 +86,8 @@ const aiNotice = lang === 'ce' || lang === 'zgh';
     </main>
 
     <Footer lang={lang} t={t} />
+    
+    <Analytics />
 
     <!-- Next-prayer toast -->
     <div
